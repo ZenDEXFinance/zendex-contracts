@@ -1,0 +1,314 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "fee0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fee1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "pancakeV3FlashCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "pancakeV3FlashCallback(uint256,uint256,bytes)": "a1d48336"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"fee0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"fee1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"pancakeV3FlashCallback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"pancakeV3FlashCallback(uint256,uint256,bytes)\":{\"details\":\"In the implementation you must repay the pool the tokens sent by flash plus the computed fee amounts. The caller of this method must be checked to be a PancakeV3Pool deployed by the canonical PancakeV3Factory.\",\"params\":{\"data\":\"Any data passed through by the caller via the IPancakeV3PoolActions#flash call\",\"fee0\":\"The fee amount in token0 due to the pool by the end of the flash\",\"fee1\":\"The fee amount in token1 due to the pool by the end of the flash\"}}},\"title\":\"Callback for IPancakeV3PoolActions#flash\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"pancakeV3FlashCallback(uint256,uint256,bytes)\":{\"notice\":\"Called to `msg.sender` after transferring to the recipient from IPancakeV3Pool#flash.\"}},\"notice\":\"Any contract that calls IPancakeV3PoolActions#flash must implement this interface\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/v3-core/contracts/interfaces/callback/IPancakeV3FlashCallback.sol\":\"IPancakeV3FlashCallback\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/v3-core/contracts/interfaces/callback/IPancakeV3FlashCallback.sol\":{\"keccak256\":\"0x85579dc403c50754d93a2a29f12361e2b96c58f34c1b0206cde86ce23d41d93a\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://4ae1e07fa3ed653a9fc7172679797124cc17c0f2af7b3bc2fb3ad4faa95c9684\",\"dweb:/ipfs/QmbCiK2DPeKe6WBgf7cYtMsjDvCgN9qzACVmYjWDStCtoV\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "fee0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "fee1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "pancakeV3FlashCallback"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "pancakeV3FlashCallback(uint256,uint256,bytes)": {
+            "details": "In the implementation you must repay the pool the tokens sent by flash plus the computed fee amounts. The caller of this method must be checked to be a PancakeV3Pool deployed by the canonical PancakeV3Factory.",
+            "params": {
+              "data": "Any data passed through by the caller via the IPancakeV3PoolActions#flash call",
+              "fee0": "The fee amount in token0 due to the pool by the end of the flash",
+              "fee1": "The fee amount in token1 due to the pool by the end of the flash"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "pancakeV3FlashCallback(uint256,uint256,bytes)": {
+            "notice": "Called to `msg.sender` after transferring to the recipient from IPancakeV3Pool#flash."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/v3-core/contracts/interfaces/callback/IPancakeV3FlashCallback.sol": "IPancakeV3FlashCallback"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/v3-core/contracts/interfaces/callback/IPancakeV3FlashCallback.sol": {
+        "keccak256": "0x85579dc403c50754d93a2a29f12361e2b96c58f34c1b0206cde86ce23d41d93a",
+        "urls": [
+          "bzz-raw://4ae1e07fa3ed653a9fc7172679797124cc17c0f2af7b3bc2fb3ad4faa95c9684",
+          "dweb:/ipfs/QmbCiK2DPeKe6WBgf7cYtMsjDvCgN9qzACVmYjWDStCtoV"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/v3-core/contracts/interfaces/callback/IPancakeV3FlashCallback.sol",
+    "id": 44120,
+    "exportedSymbols": {
+      "IPancakeV3FlashCallback": [
+        44119
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:937:38",
+    "nodes": [
+      {
+        "id": 44107,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:38",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 44119,
+        "nodeType": "ContractDefinition",
+        "src": "217:764:38",
+        "nodes": [
+          {
+            "id": 44118,
+            "nodeType": "FunctionDefinition",
+            "src": "859:120:38",
+            "nodes": [],
+            "documentation": {
+              "id": 44109,
+              "nodeType": "StructuredDocumentation",
+              "src": "257:597:38",
+              "text": "@notice Called to `msg.sender` after transferring to the recipient from IPancakeV3Pool#flash.\n @dev In the implementation you must repay the pool the tokens sent by flash plus the computed fee amounts.\n The caller of this method must be checked to be a PancakeV3Pool deployed by the canonical PancakeV3Factory.\n @param fee0 The fee amount in token0 due to the pool by the end of the flash\n @param fee1 The fee amount in token1 due to the pool by the end of the flash\n @param data Any data passed through by the caller via the IPancakeV3PoolActions#flash call"
+            },
+            "functionSelector": "a1d48336",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pancakeV3FlashCallback",
+            "nameLocation": "868:22:38",
+            "parameters": {
+              "id": 44116,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44111,
+                  "mutability": "mutable",
+                  "name": "fee0",
+                  "nameLocation": "908:4:38",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44118,
+                  "src": "900:12:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44110,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "900:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44113,
+                  "mutability": "mutable",
+                  "name": "fee1",
+                  "nameLocation": "930:4:38",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44118,
+                  "src": "922:12:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 44112,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "922:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44115,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "959:4:38",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44118,
+                  "src": "944:19:38",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 44114,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "944:5:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "890:79:38"
+            },
+            "returnParameters": {
+              "id": 44117,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "978:0:38"
+            },
+            "scope": 44119,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPancakeV3FlashCallback",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 44108,
+          "nodeType": "StructuredDocumentation",
+          "src": "71:146:38",
+          "text": "@title Callback for IPancakeV3PoolActions#flash\n @notice Any contract that calls IPancakeV3PoolActions#flash must implement this interface"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          44119
+        ],
+        "name": "IPancakeV3FlashCallback",
+        "nameLocation": "227:23:38",
+        "scope": 44120,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 38
+}

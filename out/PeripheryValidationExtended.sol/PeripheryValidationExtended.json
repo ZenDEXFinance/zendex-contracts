@@ -1,0 +1,432 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/router/contracts/base/PeripheryValidationExtended.sol\":\"PeripheryValidationExtended\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/router/contracts/base/PeripheryValidationExtended.sol\":{\"keccak256\":\"0x8a6d484e40e8c00f939dfb22bee3a558fcdb4cb06a49e74acd6035c37e561340\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://5cf6b544de3c808c9abf7335ef73715b90f81f8898f3f7686def923c9576462e\",\"dweb:/ipfs/QmS2aa2pomQ7av6kxfute7AymcgtYEpifWGu7bbH8HMVWv\"]},\"src/v3-periphery/contracts/base/BlockTimestamp.sol\":{\"keccak256\":\"0x1aa66f71234064a0c0976f62233f2edbd69554e5ad817dc97f318bc8e11f4da6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b3a40450e9d6b0f9cb91b40ffd6215612505bd74e7d954529958f4edc6ee7b93\",\"dweb:/ipfs/QmewsUCHK5N5KhNtqEwK8JgsXFADyFBrQRS5HoDWM5gi3b\"]},\"src/v3-periphery/contracts/base/PeripheryValidation.sol\":{\"keccak256\":\"0xc736bab599912d6212e8414ee4ba7af0c1e08ff6aa11caa85f5f6e07f7d421c3\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://06f6c13a86900c71fa486fc029a59d1b7eb96162bb42885b5f845d995294893e\",\"dweb:/ipfs/QmUcBxMsmncw9n6eXhzzwSasGBvBGKH5FT8HSrAxrsXV4A\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/router/contracts/base/PeripheryValidationExtended.sol": "PeripheryValidationExtended"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/router/contracts/base/PeripheryValidationExtended.sol": {
+        "keccak256": "0x8a6d484e40e8c00f939dfb22bee3a558fcdb4cb06a49e74acd6035c37e561340",
+        "urls": [
+          "bzz-raw://5cf6b544de3c808c9abf7335ef73715b90f81f8898f3f7686def923c9576462e",
+          "dweb:/ipfs/QmS2aa2pomQ7av6kxfute7AymcgtYEpifWGu7bbH8HMVWv"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/base/BlockTimestamp.sol": {
+        "keccak256": "0x1aa66f71234064a0c0976f62233f2edbd69554e5ad817dc97f318bc8e11f4da6",
+        "urls": [
+          "bzz-raw://b3a40450e9d6b0f9cb91b40ffd6215612505bd74e7d954529958f4edc6ee7b93",
+          "dweb:/ipfs/QmewsUCHK5N5KhNtqEwK8JgsXFADyFBrQRS5HoDWM5gi3b"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/base/PeripheryValidation.sol": {
+        "keccak256": "0xc736bab599912d6212e8414ee4ba7af0c1e08ff6aa11caa85f5f6e07f7d421c3",
+        "urls": [
+          "bzz-raw://06f6c13a86900c71fa486fc029a59d1b7eb96162bb42885b5f845d995294893e",
+          "dweb:/ipfs/QmUcBxMsmncw9n6eXhzzwSasGBvBGKH5FT8HSrAxrsXV4A"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/router/contracts/base/PeripheryValidationExtended.sol",
+    "id": 8433,
+    "exportedSymbols": {
+      "BlockTimestamp": [
+        31233
+      ],
+      "PeripheryValidation": [
+        32195
+      ],
+      "PeripheryValidationExtended": [
+        8432
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:336:42",
+    "nodes": [
+      {
+        "id": 8410,
+        "nodeType": "PragmaDirective",
+        "src": "45:23:42",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 8411,
+        "nodeType": "ImportDirective",
+        "src": "70:74:42",
+        "nodes": [],
+        "absolutePath": "src/v3-periphery/contracts/base/PeripheryValidation.sol",
+        "file": "@pancakeswap/v3-periphery/contracts/base/PeripheryValidation.sol",
+        "scope": 8433,
+        "sourceUnit": 32196,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 8432,
+        "nodeType": "ContractDefinition",
+        "src": "146:234:42",
+        "nodes": [
+          {
+            "id": 8431,
+            "nodeType": "ModifierDefinition",
+            "src": "221:157:42",
+            "nodes": [],
+            "body": {
+              "id": 8430,
+              "nodeType": "Block",
+              "src": "280:98:42",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "id": 8425,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [
+                            {
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "id": 8422,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "leftExpression": {
+                                "expression": {
+                                  "id": 8419,
+                                  "name": "block",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -4,
+                                  "src": "308:5:42",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_block",
+                                    "typeString": "block"
+                                  }
+                                },
+                                "id": 8420,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "number",
+                                "nodeType": "MemberAccess",
+                                "src": "308:12:42",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "nodeType": "BinaryOperation",
+                              "operator": "-",
+                              "rightExpression": {
+                                "hexValue": "31",
+                                "id": 8421,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "kind": "number",
+                                "lValueRequested": false,
+                                "nodeType": "Literal",
+                                "src": "323:1:42",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_rational_1_by_1",
+                                  "typeString": "int_const 1"
+                                },
+                                "value": "1"
+                              },
+                              "src": "308:16:42",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "id": 8418,
+                            "name": "blockhash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -5,
+                            "src": "298:9:42",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_blockhash_view$_t_uint256_$returns$_t_bytes32_$",
+                              "typeString": "function (uint256) view returns (bytes32)"
+                            }
+                          },
+                          "id": 8423,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "298:27:42",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 8424,
+                          "name": "previousBlockhash",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8415,
+                          "src": "329:17:42",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "src": "298:48:42",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "426c6f636b68617368",
+                        "id": 8426,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "348:11:42",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_46d8abb9552766132026156d7c22c2b7c9e11624b63ac207deaf1a158b20a89f",
+                          "typeString": "literal_string \"Blockhash\""
+                        },
+                        "value": "Blockhash"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_46d8abb9552766132026156d7c22c2b7c9e11624b63ac207deaf1a158b20a89f",
+                          "typeString": "literal_string \"Blockhash\""
+                        }
+                      ],
+                      "id": 8417,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "290:7:42",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 8427,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "290:70:42",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8428,
+                  "nodeType": "ExpressionStatement",
+                  "src": "290:70:42"
+                },
+                {
+                  "id": 8429,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "370:1:42"
+                }
+              ]
+            },
+            "name": "checkPreviousBlockhash",
+            "parameters": {
+              "id": 8416,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8415,
+                  "mutability": "mutable",
+                  "name": "previousBlockhash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8431,
+                  "src": "253:25:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8414,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "253:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "252:27:42"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 8412,
+              "name": "PeripheryValidation",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 32195,
+              "src": "195:19:42",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PeripheryValidation_$32195",
+                "typeString": "contract PeripheryValidation"
+              }
+            },
+            "id": 8413,
+            "nodeType": "InheritanceSpecifier",
+            "src": "195:19:42"
+          }
+        ],
+        "contractDependencies": [
+          31233,
+          32195
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          8432,
+          32195,
+          31233
+        ],
+        "name": "PeripheryValidationExtended",
+        "scope": 8433
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 42
+}

@@ -1,0 +1,622 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "amount0Requested",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "amount1Requested",
+          "type": "uint128"
+        }
+      ],
+      "name": "collectProtocol",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "amount0",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "amount1",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "feeProtocol0",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "feeProtocol1",
+          "type": "uint32"
+        }
+      ],
+      "name": "setFeeProtocol",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "lmPool",
+          "type": "address"
+        }
+      ],
+      "name": "setLmPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "collectProtocol(address,uint128,uint128)": "85b66729",
+    "setFeeProtocol(uint32,uint32)": "b0d0d211",
+    "setLmPool(address)": "cc7e7fa2"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint128\",\"name\":\"amount0Requested\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"amount1Requested\",\"type\":\"uint128\"}],\"name\":\"collectProtocol\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"amount0\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"amount1\",\"type\":\"uint128\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"feeProtocol0\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"feeProtocol1\",\"type\":\"uint32\"}],\"name\":\"setFeeProtocol\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"lmPool\",\"type\":\"address\"}],\"name\":\"setLmPool\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"collectProtocol(address,uint128,uint128)\":{\"params\":{\"amount0Requested\":\"The maximum amount of token0 to send, can be 0 to collect fees in only token1\",\"amount1Requested\":\"The maximum amount of token1 to send, can be 0 to collect fees in only token0\",\"recipient\":\"The address to which collected protocol fees should be sent\"},\"returns\":{\"amount0\":\"The protocol fee collected in token0\",\"amount1\":\"The protocol fee collected in token1\"}},\"setFeeProtocol(uint32,uint32)\":{\"params\":{\"feeProtocol0\":\"new protocol fee for token0 of the pool\",\"feeProtocol1\":\"new protocol fee for token1 of the pool\"}}},\"title\":\"Permissioned pool actions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"collectProtocol(address,uint128,uint128)\":{\"notice\":\"Collect the protocol fee accrued to the pool\"},\"setFeeProtocol(uint32,uint32)\":{\"notice\":\"Set the denominator of the protocol's % share of the fees\"},\"setLmPool(address)\":{\"notice\":\"Set the LM pool to enable liquidity mining\"}},\"notice\":\"Contains pool methods that may only be called by the factory owner\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol\":\"IPancakeV3PoolOwnerActions\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol\":{\"keccak256\":\"0x5c522018f94c194608fd0f3f6bb1c7373d53496f5b6cb5e916b7a8d61fc7caf1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://4e3b53a05473e3862a40c30bc9ef64c3d835975297577a790309253917d990e9\",\"dweb:/ipfs/QmRSrGUM3AEXjBBWvrHzdvz4ibjAYDFZzfRZoXRnFDz9vi\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint128",
+              "name": "amount0Requested",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "amount1Requested",
+              "type": "uint128"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "collectProtocol",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "amount0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "amount1",
+              "type": "uint128"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "feeProtocol0",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "feeProtocol1",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setFeeProtocol"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "lmPool",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setLmPool"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "collectProtocol(address,uint128,uint128)": {
+            "params": {
+              "amount0Requested": "The maximum amount of token0 to send, can be 0 to collect fees in only token1",
+              "amount1Requested": "The maximum amount of token1 to send, can be 0 to collect fees in only token0",
+              "recipient": "The address to which collected protocol fees should be sent"
+            },
+            "returns": {
+              "amount0": "The protocol fee collected in token0",
+              "amount1": "The protocol fee collected in token1"
+            }
+          },
+          "setFeeProtocol(uint32,uint32)": {
+            "params": {
+              "feeProtocol0": "new protocol fee for token0 of the pool",
+              "feeProtocol1": "new protocol fee for token1 of the pool"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "collectProtocol(address,uint128,uint128)": {
+            "notice": "Collect the protocol fee accrued to the pool"
+          },
+          "setFeeProtocol(uint32,uint32)": {
+            "notice": "Set the denominator of the protocol's % share of the fees"
+          },
+          "setLmPool(address)": {
+            "notice": "Set the LM pool to enable liquidity mining"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol": "IPancakeV3PoolOwnerActions"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol": {
+        "keccak256": "0x5c522018f94c194608fd0f3f6bb1c7373d53496f5b6cb5e916b7a8d61fc7caf1",
+        "urls": [
+          "bzz-raw://4e3b53a05473e3862a40c30bc9ef64c3d835975297577a790309253917d990e9",
+          "dweb:/ipfs/QmRSrGUM3AEXjBBWvrHzdvz4ibjAYDFZzfRZoXRnFDz9vi"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol",
+    "id": 44470,
+    "exportedSymbols": {
+      "IPancakeV3PoolOwnerActions": [
+        44469
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:1254:45",
+    "nodes": [
+      {
+        "id": 44439,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:45",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 44469,
+        "nodeType": "ContractDefinition",
+        "src": "187:1111:45",
+        "nodes": [
+          {
+            "id": 44448,
+            "nodeType": "FunctionDefinition",
+            "src": "440:75:45",
+            "nodes": [],
+            "documentation": {
+              "id": 44441,
+              "nodeType": "StructuredDocumentation",
+              "src": "230:205:45",
+              "text": "@notice Set the denominator of the protocol's % share of the fees\n @param feeProtocol0 new protocol fee for token0 of the pool\n @param feeProtocol1 new protocol fee for token1 of the pool"
+            },
+            "functionSelector": "b0d0d211",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFeeProtocol",
+            "nameLocation": "449:14:45",
+            "parameters": {
+              "id": 44446,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44443,
+                  "mutability": "mutable",
+                  "name": "feeProtocol0",
+                  "nameLocation": "471:12:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44448,
+                  "src": "464:19:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 44442,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:6:45",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44445,
+                  "mutability": "mutable",
+                  "name": "feeProtocol1",
+                  "nameLocation": "492:12:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44448,
+                  "src": "485:19:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 44444,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "485:6:45",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "463:42:45"
+            },
+            "returnParameters": {
+              "id": 44447,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "514:0:45"
+            },
+            "scope": 44469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44462,
+            "nodeType": "FunctionDefinition",
+            "src": "1009:178:45",
+            "nodes": [],
+            "documentation": {
+              "id": 44449,
+              "nodeType": "StructuredDocumentation",
+              "src": "521:483:45",
+              "text": "@notice Collect the protocol fee accrued to the pool\n @param recipient The address to which collected protocol fees should be sent\n @param amount0Requested The maximum amount of token0 to send, can be 0 to collect fees in only token1\n @param amount1Requested The maximum amount of token1 to send, can be 0 to collect fees in only token0\n @return amount0 The protocol fee collected in token0\n @return amount1 The protocol fee collected in token1"
+            },
+            "functionSelector": "85b66729",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "collectProtocol",
+            "nameLocation": "1018:15:45",
+            "parameters": {
+              "id": 44456,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44451,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "1051:9:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44462,
+                  "src": "1043:17:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44450,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1043:7:45",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44453,
+                  "mutability": "mutable",
+                  "name": "amount0Requested",
+                  "nameLocation": "1078:16:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44462,
+                  "src": "1070:24:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 44452,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1070:7:45",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44455,
+                  "mutability": "mutable",
+                  "name": "amount1Requested",
+                  "nameLocation": "1112:16:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44462,
+                  "src": "1104:24:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 44454,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1104:7:45",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1033:101:45"
+            },
+            "returnParameters": {
+              "id": 44461,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44458,
+                  "mutability": "mutable",
+                  "name": "amount0",
+                  "nameLocation": "1161:7:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44462,
+                  "src": "1153:15:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 44457,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1153:7:45",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 44460,
+                  "mutability": "mutable",
+                  "name": "amount1",
+                  "nameLocation": "1178:7:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44462,
+                  "src": "1170:15:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 44459,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1170:7:45",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1152:34:45"
+            },
+            "scope": 44469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 44468,
+            "nodeType": "FunctionDefinition",
+            "src": "1252:44:45",
+            "nodes": [],
+            "documentation": {
+              "id": 44463,
+              "nodeType": "StructuredDocumentation",
+              "src": "1193:54:45",
+              "text": "@notice Set the LM pool to enable liquidity mining"
+            },
+            "functionSelector": "cc7e7fa2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setLmPool",
+            "nameLocation": "1261:9:45",
+            "parameters": {
+              "id": 44466,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44465,
+                  "mutability": "mutable",
+                  "name": "lmPool",
+                  "nameLocation": "1279:6:45",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44468,
+                  "src": "1271:14:45",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44464,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1271:7:45",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1270:16:45"
+            },
+            "returnParameters": {
+              "id": 44467,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1295:0:45"
+            },
+            "scope": 44469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IPancakeV3PoolOwnerActions",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 44440,
+          "nodeType": "StructuredDocumentation",
+          "src": "71:116:45",
+          "text": "@title Permissioned pool actions\n @notice Contains pool methods that may only be called by the factory owner"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          44469
+        ],
+        "name": "IPancakeV3PoolOwnerActions",
+        "nameLocation": "197:26:45",
+        "scope": 44470,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 45
+}

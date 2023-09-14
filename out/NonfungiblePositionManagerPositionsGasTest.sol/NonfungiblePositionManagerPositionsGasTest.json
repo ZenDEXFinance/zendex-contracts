@@ -1,0 +1,747 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract INonfungiblePositionManager",
+          "name": "_nonfungiblePositionManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getGasCostOfPositions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60a060405234801561001057600080fd5b506040516101933803806101938339818101604052602081101561003357600080fd5b5051606081901b6001600160601b0319166080526001600160a01b031661012d610066600039806061525061012d6000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063994ea42c14602d575b600080fd5b604760048036036020811015604157600080fd5b50356059565b60408051918252519081900360200190f35b6000805a90507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166399fbab88846040518263ffffffff1660e01b8152600401808281526020019150506101806040518083038186803b15801560c357600080fd5b505afa15801560d6573d6000803e3d6000fd5b505050506040513d61018081101560ec57600080fd5b50505a90039291505056fea264697066735822122088e1d9087c62a92e91808b28fc4fb02f04db0cde15680e3b07d4a051865339ac64736f6c63430007060033",
+    "sourceMap": "121:498:193:-:0;;;250:142;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;250:142:193;329:56;;;;-1:-1:-1;;;;;;329:56:193;;;-1:-1:-1;;;;;121:498:193;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063994ea42c14602d575b600080fd5b604760048036036020811015604157600080fd5b50356059565b60408051918252519081900360200190f35b6000805a90507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166399fbab88846040518263ffffffff1660e01b8152600401808281526020019150506101806040518083038186803b15801560c357600080fd5b505afa15801560d6573d6000803e3d6000fd5b505050506040513d61018081101560ec57600080fd5b50505a90039291505056fea264697066735822122088e1d9087c62a92e91808b28fc4fb02f04db0cde15680e3b07d4a051865339ac64736f6c63430007060033",
+    "sourceMap": "121:498:193:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;398:219;;;;;;;;;;;;;;;;-1:-1:-1;398:219:193;;:::i;:::-;;;;;;;;;;;;;;;;;469:7;488:17;508:9;488:29;;527:26;-1:-1:-1;;;;;527:36:193;;564:7;527:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;601:9:193;589:21;;;398:219;-1:-1:-1;;398:219:193:o",
+    "linkReferences": {},
+    "immutableReferences": {
+      "41063": [
+        {
+          "start": 97,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "getGasCostOfPositions(uint256)": "994ea42c"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract INonfungiblePositionManager\",\"name\":\"_nonfungiblePositionManager\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getGasCostOfPositions\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/v3-periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol\":\"NonfungiblePositionManagerPositionsGasTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"src/v3-periphery/contracts/interfaces/IERC721Permit.sol\":{\"keccak256\":\"0x04c75cdedad7374f7232ab2817e3152457497008bf7ab1b9c1a61a4514a86fe2\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://63f1fbf271464166dd89cbf69e0ea517edcff2104d30c1aae6e9059a9fc15143\",\"dweb:/ipfs/Qmai7yUbzkqDfhEs95oHpFbfvVNP6BhSapwgpQnBJYypyo\"]},\"src/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol\":{\"keccak256\":\"0x2d3716e41ddd67e705f12efd684f8e80248165873b117c95cd868ea1dd7acc6b\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f2e636469d35a9e90d2a9c7fe936b5afb15543d1e76e0aa54c8d46430d0019c1\",\"dweb:/ipfs/QmeK4qbCQF6QFKFjNaJ9oRw1bX6PZPU9rTdHZfAbpHiBYw\"]},\"src/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol\":{\"keccak256\":\"0x72e2d91b64685e4c4725cb3d144626e770842c2d2e0525816f9dd2044f6c9483\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://5c7aca85d579139d7dc1a68c0b85a73f02a6306009342c9eb5b57c90772564a1\",\"dweb:/ipfs/QmP2BhNYXDEnGLKBZR9guuYL2Q7848pTr5CCzPk1wGtwns\"]},\"src/v3-periphery/contracts/interfaces/IPeripheryPayments.sol\":{\"keccak256\":\"0x9f7d06f70bc237ffc6d3cb80c0035d28c1f08395e58aed0f5e85e0cbe402025b\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6637101237472ffd1cc53a8af074dd40bc2926f09825ccd1fecbee123b9afb3a\",\"dweb:/ipfs/QmU9PBHq6ow64uRYC7q6p8pKuep7zeSN89fF2c3VCTVdV1\"]},\"src/v3-periphery/contracts/interfaces/IPoolInitializer.sol\":{\"keccak256\":\"0x9d7695e8d94c22cc5fcced602017aabb988de89981ea7bee29ea629d5328a862\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://61b50933026ee1017db2a6273af8cedc3238c95dca58880db0918dbdbb2f064f\",\"dweb:/ipfs/QmUebR26pqG25d18aBELKz8aFFKkmHa8PxntzXTA7o9Ldu\"]},\"src/v3-periphery/contracts/libraries/PoolAddress.sol\":{\"keccak256\":\"0x8ff537853fb14f848febb943ef2f7b81d26a3d1f5a020a6f59ddd5723ad3ad23\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6ed45c72a514f3c47656037157af3377f39bb0578cb99287a64e8539c4c4ce92\",\"dweb:/ipfs/QmUDNRkon5VEWdi6QkrLtpJK3LWtMGUN13Snn4EfMSdDeK\"]},\"src/v3-periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol\":{\"keccak256\":\"0x43373dc1cb7eaf101f19850b72bed1ec4be0e423cb960d0061dfbb9af6999856\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7cb1437b875e37159ee5bce41c944436173762056e78b2ef7555e1216d38750d\",\"dweb:/ipfs/QmQbP7NCTf9hFaHDGwRCHqJwFfxXaeMZuxigLjLwjoXdoQ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract INonfungiblePositionManager",
+              "name": "_nonfungiblePositionManager",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getGasCostOfPositions",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/v3-periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol": "NonfungiblePositionManagerPositionsGasTest"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/introspection/IERC165.sol": {
+        "keccak256": "0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82",
+        "urls": [
+          "bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c",
+          "dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol": {
+        "keccak256": "0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962",
+        "urls": [
+          "bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45",
+          "dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Enumerable.sol": {
+        "keccak256": "0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13",
+        "urls": [
+          "bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a",
+          "dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Metadata.sol": {
+        "keccak256": "0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7",
+        "urls": [
+          "bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886",
+          "dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox"
+        ],
+        "license": "MIT"
+      },
+      "src/v3-periphery/contracts/interfaces/IERC721Permit.sol": {
+        "keccak256": "0x04c75cdedad7374f7232ab2817e3152457497008bf7ab1b9c1a61a4514a86fe2",
+        "urls": [
+          "bzz-raw://63f1fbf271464166dd89cbf69e0ea517edcff2104d30c1aae6e9059a9fc15143",
+          "dweb:/ipfs/Qmai7yUbzkqDfhEs95oHpFbfvVNP6BhSapwgpQnBJYypyo"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol": {
+        "keccak256": "0x2d3716e41ddd67e705f12efd684f8e80248165873b117c95cd868ea1dd7acc6b",
+        "urls": [
+          "bzz-raw://f2e636469d35a9e90d2a9c7fe936b5afb15543d1e76e0aa54c8d46430d0019c1",
+          "dweb:/ipfs/QmeK4qbCQF6QFKFjNaJ9oRw1bX6PZPU9rTdHZfAbpHiBYw"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol": {
+        "keccak256": "0x72e2d91b64685e4c4725cb3d144626e770842c2d2e0525816f9dd2044f6c9483",
+        "urls": [
+          "bzz-raw://5c7aca85d579139d7dc1a68c0b85a73f02a6306009342c9eb5b57c90772564a1",
+          "dweb:/ipfs/QmP2BhNYXDEnGLKBZR9guuYL2Q7848pTr5CCzPk1wGtwns"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/interfaces/IPeripheryPayments.sol": {
+        "keccak256": "0x9f7d06f70bc237ffc6d3cb80c0035d28c1f08395e58aed0f5e85e0cbe402025b",
+        "urls": [
+          "bzz-raw://6637101237472ffd1cc53a8af074dd40bc2926f09825ccd1fecbee123b9afb3a",
+          "dweb:/ipfs/QmU9PBHq6ow64uRYC7q6p8pKuep7zeSN89fF2c3VCTVdV1"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/interfaces/IPoolInitializer.sol": {
+        "keccak256": "0x9d7695e8d94c22cc5fcced602017aabb988de89981ea7bee29ea629d5328a862",
+        "urls": [
+          "bzz-raw://61b50933026ee1017db2a6273af8cedc3238c95dca58880db0918dbdbb2f064f",
+          "dweb:/ipfs/QmUebR26pqG25d18aBELKz8aFFKkmHa8PxntzXTA7o9Ldu"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/libraries/PoolAddress.sol": {
+        "keccak256": "0x8ff537853fb14f848febb943ef2f7b81d26a3d1f5a020a6f59ddd5723ad3ad23",
+        "urls": [
+          "bzz-raw://6ed45c72a514f3c47656037157af3377f39bb0578cb99287a64e8539c4c4ce92",
+          "dweb:/ipfs/QmUDNRkon5VEWdi6QkrLtpJK3LWtMGUN13Snn4EfMSdDeK"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol": {
+        "keccak256": "0x43373dc1cb7eaf101f19850b72bed1ec4be0e423cb960d0061dfbb9af6999856",
+        "urls": [
+          "bzz-raw://7cb1437b875e37159ee5bce41c944436173762056e78b2ef7555e1216d38750d",
+          "dweb:/ipfs/QmQbP7NCTf9hFaHDGwRCHqJwFfxXaeMZuxigLjLwjoXdoQ"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/v3-periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol",
+    "id": 41099,
+    "exportedSymbols": {
+      "IERC165": [
+        1137
+      ],
+      "IERC721": [
+        3312
+      ],
+      "IERC721Enumerable": [
+        3343
+      ],
+      "IERC721Metadata": [
+        3370
+      ],
+      "IERC721Permit": [
+        32851
+      ],
+      "INonfungiblePositionManager": [
+        33061
+      ],
+      "IPeripheryImmutableState": [
+        33098
+      ],
+      "IPeripheryPayments": [
+        33124
+      ],
+      "IPoolInitializer": [
+        33176
+      ],
+      "NonfungiblePositionManagerPositionsGasTest": [
+        41098
+      ],
+      "PoolAddress": [
+        39065
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:581:193",
+    "nodes": [
+      {
+        "id": 41060,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:193",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 41061,
+        "nodeType": "ImportDirective",
+        "src": "64:55:193",
+        "nodes": [],
+        "absolutePath": "src/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol",
+        "file": "../interfaces/INonfungiblePositionManager.sol",
+        "scope": 41099,
+        "sourceUnit": 33062,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 41098,
+        "nodeType": "ContractDefinition",
+        "src": "121:498:193",
+        "nodes": [
+          {
+            "id": 41063,
+            "nodeType": "VariableDeclaration",
+            "src": "179:64:193",
+            "nodes": [],
+            "constant": false,
+            "mutability": "immutable",
+            "name": "nonfungiblePositionManager",
+            "scope": 41098,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+              "typeString": "contract INonfungiblePositionManager"
+            },
+            "typeName": {
+              "id": 41062,
+              "name": "INonfungiblePositionManager",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 33061,
+              "src": "179:27:193",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                "typeString": "contract INonfungiblePositionManager"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 41073,
+            "nodeType": "FunctionDefinition",
+            "src": "250:142:193",
+            "nodes": [],
+            "body": {
+              "id": 41072,
+              "nodeType": "Block",
+              "src": "319:73:193",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 41070,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 41068,
+                      "name": "nonfungiblePositionManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41063,
+                      "src": "329:26:193",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                        "typeString": "contract INonfungiblePositionManager"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 41069,
+                      "name": "_nonfungiblePositionManager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41065,
+                      "src": "358:27:193",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                        "typeString": "contract INonfungiblePositionManager"
+                      }
+                    },
+                    "src": "329:56:193",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                      "typeString": "contract INonfungiblePositionManager"
+                    }
+                  },
+                  "id": 41071,
+                  "nodeType": "ExpressionStatement",
+                  "src": "329:56:193"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "parameters": {
+              "id": 41066,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41065,
+                  "mutability": "mutable",
+                  "name": "_nonfungiblePositionManager",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41073,
+                  "src": "262:55:193",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                    "typeString": "contract INonfungiblePositionManager"
+                  },
+                  "typeName": {
+                    "id": 41064,
+                    "name": "INonfungiblePositionManager",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 33061,
+                    "src": "262:27:193",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                      "typeString": "contract INonfungiblePositionManager"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "261:57:193"
+            },
+            "returnParameters": {
+              "id": 41067,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "319:0:193"
+            },
+            "scope": 41098,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 41097,
+            "nodeType": "FunctionDefinition",
+            "src": "398:219:193",
+            "nodes": [],
+            "body": {
+              "id": 41096,
+              "nodeType": "Block",
+              "src": "478:139:193",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    41081
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 41081,
+                      "mutability": "mutable",
+                      "name": "gasBefore",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 41096,
+                      "src": "488:17:193",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 41080,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "488:7:193",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 41084,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 41082,
+                      "name": "gasleft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -7,
+                      "src": "508:7:193",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 41083,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "508:9:193",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "488:29:193"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 41088,
+                        "name": "tokenId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 41075,
+                        "src": "564:7:193",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 41085,
+                        "name": "nonfungiblePositionManager",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 41063,
+                        "src": "527:26:193",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_INonfungiblePositionManager_$33061",
+                          "typeString": "contract INonfungiblePositionManager"
+                        }
+                      },
+                      "id": 41087,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "positions",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 32952,
+                      "src": "527:36:193",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint96_$_t_address_$_t_address_$_t_address_$_t_uint24_$_t_int24_$_t_int24_$_t_uint128_$_t_uint256_$_t_uint256_$_t_uint128_$_t_uint128_$",
+                        "typeString": "function (uint256) view external returns (uint96,address,address,address,uint24,int24,int24,uint128,uint256,uint256,uint128,uint128)"
+                      }
+                    },
+                    "id": 41089,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "527:45:193",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint96_$_t_address_$_t_address_$_t_address_$_t_uint24_$_t_int24_$_t_int24_$_t_uint128_$_t_uint256_$_t_uint256_$_t_uint128_$_t_uint128_$",
+                      "typeString": "tuple(uint96,address,address,address,uint24,int24,int24,uint128,uint256,uint256,uint128,uint128)"
+                    }
+                  },
+                  "id": 41090,
+                  "nodeType": "ExpressionStatement",
+                  "src": "527:45:193"
+                },
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 41094,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 41091,
+                      "name": "gasBefore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41081,
+                      "src": "589:9:193",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 41092,
+                        "name": "gasleft",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -7,
+                        "src": "601:7:193",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view returns (uint256)"
+                        }
+                      },
+                      "id": 41093,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "601:9:193",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "589:21:193",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 41079,
+                  "id": 41095,
+                  "nodeType": "Return",
+                  "src": "582:28:193"
+                }
+              ]
+            },
+            "functionSelector": "994ea42c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getGasCostOfPositions",
+            "parameters": {
+              "id": 41076,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41075,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41097,
+                  "src": "429:15:193",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41074,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "429:7:193",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "428:17:193"
+            },
+            "returnParameters": {
+              "id": 41079,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41078,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41097,
+                  "src": "469:7:193",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41077,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "469:7:193",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "468:9:193"
+            },
+            "scope": 41098,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          41098
+        ],
+        "name": "NonfungiblePositionManagerPositionsGasTest",
+        "scope": 41099
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 193
+}

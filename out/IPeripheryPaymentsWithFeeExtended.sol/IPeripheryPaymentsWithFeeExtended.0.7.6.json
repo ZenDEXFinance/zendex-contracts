@@ -1,0 +1,989 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "pull",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "refundETH",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "sweepToken",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        }
+      ],
+      "name": "sweepToken",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeBips",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "feeRecipient",
+          "type": "address"
+        }
+      ],
+      "name": "sweepTokenWithFee",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeBips",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "feeRecipient",
+          "type": "address"
+        }
+      ],
+      "name": "sweepTokenWithFee",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "unwrapWETH9",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeBips",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "feeRecipient",
+          "type": "address"
+        }
+      ],
+      "name": "unwrapWETH9WithFee",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountMinimum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feeBips",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "feeRecipient",
+          "type": "address"
+        }
+      ],
+      "name": "unwrapWETH9WithFee",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "wrapETH",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "pull(address,uint256)": "f2d5d56b",
+    "refundETH()": "12210e8a",
+    "sweepToken(address,uint256)": "e90a182f",
+    "sweepToken(address,uint256,address)": "df2ab5bb",
+    "sweepTokenWithFee(address,uint256,address,uint256,address)": "e0e189a0",
+    "sweepTokenWithFee(address,uint256,uint256,address)": "3068c554",
+    "unwrapWETH9(uint256,address)": "49404b7c",
+    "unwrapWETH9WithFee(uint256,address,uint256,address)": "9b2c0a37",
+    "unwrapWETH9WithFee(uint256,uint256,address)": "d4ef38de",
+    "wrapETH(uint256)": "1c58db4f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"pull\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"refundETH\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"name\":\"sweepToken\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"}],\"name\":\"sweepToken\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"feeBips\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"feeRecipient\",\"type\":\"address\"}],\"name\":\"sweepTokenWithFee\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"feeBips\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"feeRecipient\",\"type\":\"address\"}],\"name\":\"sweepTokenWithFee\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"name\":\"unwrapWETH9\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"feeBips\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"feeRecipient\",\"type\":\"address\"}],\"name\":\"unwrapWETH9WithFee\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amountMinimum\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"feeBips\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"feeRecipient\",\"type\":\"address\"}],\"name\":\"unwrapWETH9WithFee\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"wrapETH\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"pull(address,uint256)\":{\"params\":{\"token\":\"The token to pull\",\"value\":\"The amount to pay\"}},\"refundETH()\":{\"details\":\"Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount. And in PancakeSwap Router, this would be called  at the very end of swap\"},\"sweepToken(address,uint256)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing the token from users\",\"params\":{\"amountMinimum\":\"The minimum amount of token required for a transfer\",\"token\":\"The contract address of the token which will be transferred to msg.sender\"}},\"sweepToken(address,uint256,address)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing the token from users\",\"params\":{\"amountMinimum\":\"The minimum amount of token required for a transfer\",\"recipient\":\"The destination address of the token\",\"token\":\"The contract address of the token which will be transferred to `recipient`\"}},\"sweepTokenWithFee(address,uint256,address,uint256,address)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing the token from users\"},\"sweepTokenWithFee(address,uint256,uint256,address)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing the token from users\"},\"unwrapWETH9(uint256,address)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.\",\"params\":{\"amountMinimum\":\"The minimum amount of WETH9 to unwrap\",\"recipient\":\"The address receiving ETH\"}},\"unwrapWETH9WithFee(uint256,address,uint256,address)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.\"},\"unwrapWETH9WithFee(uint256,uint256,address)\":{\"details\":\"The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.\"},\"wrapETH(uint256)\":{\"details\":\"The resulting WETH9 is custodied by the router, thus will require further distribution\",\"params\":{\"value\":\"The amount of ETH to wrap\"}}},\"title\":\"Periphery Payments With Fee Extended\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"pull(address,uint256)\":{\"notice\":\"Transfers the specified amount of a token from the msg.sender to address(this)\"},\"refundETH()\":{\"notice\":\"Refunds any ETH balance held by this contract to the `msg.sender`\"},\"sweepToken(address,uint256)\":{\"notice\":\"Transfers the full amount of a token held by this contract to msg.sender\"},\"sweepToken(address,uint256,address)\":{\"notice\":\"Transfers the full amount of a token held by this contract to recipient\"},\"sweepTokenWithFee(address,uint256,address,uint256,address)\":{\"notice\":\"Transfers the full amount of a token held by this contract to recipient, with a percentage between 0 (exclusive) and 1 (inclusive) going to feeRecipient\"},\"sweepTokenWithFee(address,uint256,uint256,address)\":{\"notice\":\"Transfers the full amount of a token held by this contract to msg.sender, with a percentage between 0 (exclusive) and 1 (inclusive) going to feeRecipient\"},\"unwrapWETH9(uint256,address)\":{\"notice\":\"Unwraps the contract's WETH9 balance and sends it to recipient as ETH.\"},\"unwrapWETH9WithFee(uint256,address,uint256,address)\":{\"notice\":\"Unwraps the contract's WETH9 balance and sends it to recipient as ETH, with a percentage between 0 (exclusive), and 1 (inclusive) going to feeRecipient\"},\"unwrapWETH9WithFee(uint256,uint256,address)\":{\"notice\":\"Unwraps the contract's WETH9 balance and sends it to msg.sender as ETH, with a percentage between 0 (exclusive), and 1 (inclusive) going to feeRecipient\"},\"wrapETH(uint256)\":{\"notice\":\"Wraps the contract's ETH balance into WETH9\"}},\"notice\":\"Functions to ease deposits and withdrawals of ETH\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/router/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol\":\"IPeripheryPaymentsWithFeeExtended\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/router/contracts/interfaces/IPeripheryPaymentsExtended.sol\":{\"keccak256\":\"0x0951f1a9d7792135c99b1d387f3c7c16d74a6bb8a394dd8c9868487dc2628c5d\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://ea954ee121bbc3ed3bec24867e5660a5ff10b2fb93cb0a2e730f59304c1c2393\",\"dweb:/ipfs/Qmewb9ZTr1ybiLzrNGHw8kpJHnkVyF2JBWjFo9nNV8bnQE\"]},\"src/router/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol\":{\"keccak256\":\"0x87158fc0ce4469209c6ce174c2f9246a6dae2a1b0906e89949f239be8f69d469\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://d46b7cd05e8091ca3028e43e58319247ded261f7acaa9000162310b5dd45fd61\",\"dweb:/ipfs/QmWYNdFAEws1ggnYM8TmErNLGDfEtd1b1Q3D3hUrJdjjUH\"]},\"src/v3-periphery/contracts/interfaces/IPeripheryPayments.sol\":{\"keccak256\":\"0x9f7d06f70bc237ffc6d3cb80c0035d28c1f08395e58aed0f5e85e0cbe402025b\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6637101237472ffd1cc53a8af074dd40bc2926f09825ccd1fecbee123b9afb3a\",\"dweb:/ipfs/QmU9PBHq6ow64uRYC7q6p8pKuep7zeSN89fF2c3VCTVdV1\"]},\"src/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol\":{\"keccak256\":\"0x23ebe0ced112c7ca3869868874b691fcbb50f90c482580dc9ebe718bda34edfc\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://689ebfcb90a26bf31af6e35456e41940c23d145cfc59d1ae5f6fa060945dd768\",\"dweb:/ipfs/QmZxVsaUWqnEEsRcphuWBvuEExQxznztSmFUkMa5ks8AHY\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "pull"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "refundETH"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "sweepToken"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "sweepToken"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "feeBips",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "feeRecipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "sweepTokenWithFee"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "feeBips",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "feeRecipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "sweepTokenWithFee"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "unwrapWETH9"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "feeBips",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "feeRecipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "unwrapWETH9WithFee"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amountMinimum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "feeBips",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "feeRecipient",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "unwrapWETH9WithFee"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "wrapETH"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "pull(address,uint256)": {
+            "params": {
+              "token": "The token to pull",
+              "value": "The amount to pay"
+            }
+          },
+          "refundETH()": {
+            "details": "Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount. And in PancakeSwap Router, this would be called  at the very end of swap"
+          },
+          "sweepToken(address,uint256)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing the token from users",
+            "params": {
+              "amountMinimum": "The minimum amount of token required for a transfer",
+              "token": "The contract address of the token which will be transferred to msg.sender"
+            }
+          },
+          "sweepToken(address,uint256,address)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing the token from users",
+            "params": {
+              "amountMinimum": "The minimum amount of token required for a transfer",
+              "recipient": "The destination address of the token",
+              "token": "The contract address of the token which will be transferred to `recipient`"
+            }
+          },
+          "sweepTokenWithFee(address,uint256,address,uint256,address)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing the token from users"
+          },
+          "sweepTokenWithFee(address,uint256,uint256,address)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing the token from users"
+          },
+          "unwrapWETH9(uint256,address)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.",
+            "params": {
+              "amountMinimum": "The minimum amount of WETH9 to unwrap",
+              "recipient": "The address receiving ETH"
+            }
+          },
+          "unwrapWETH9WithFee(uint256,address,uint256,address)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users."
+          },
+          "unwrapWETH9WithFee(uint256,uint256,address)": {
+            "details": "The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users."
+          },
+          "wrapETH(uint256)": {
+            "details": "The resulting WETH9 is custodied by the router, thus will require further distribution",
+            "params": {
+              "value": "The amount of ETH to wrap"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "pull(address,uint256)": {
+            "notice": "Transfers the specified amount of a token from the msg.sender to address(this)"
+          },
+          "refundETH()": {
+            "notice": "Refunds any ETH balance held by this contract to the `msg.sender`"
+          },
+          "sweepToken(address,uint256)": {
+            "notice": "Transfers the full amount of a token held by this contract to msg.sender"
+          },
+          "sweepToken(address,uint256,address)": {
+            "notice": "Transfers the full amount of a token held by this contract to recipient"
+          },
+          "sweepTokenWithFee(address,uint256,address,uint256,address)": {
+            "notice": "Transfers the full amount of a token held by this contract to recipient, with a percentage between 0 (exclusive) and 1 (inclusive) going to feeRecipient"
+          },
+          "sweepTokenWithFee(address,uint256,uint256,address)": {
+            "notice": "Transfers the full amount of a token held by this contract to msg.sender, with a percentage between 0 (exclusive) and 1 (inclusive) going to feeRecipient"
+          },
+          "unwrapWETH9(uint256,address)": {
+            "notice": "Unwraps the contract's WETH9 balance and sends it to recipient as ETH."
+          },
+          "unwrapWETH9WithFee(uint256,address,uint256,address)": {
+            "notice": "Unwraps the contract's WETH9 balance and sends it to recipient as ETH, with a percentage between 0 (exclusive), and 1 (inclusive) going to feeRecipient"
+          },
+          "unwrapWETH9WithFee(uint256,uint256,address)": {
+            "notice": "Unwraps the contract's WETH9 balance and sends it to msg.sender as ETH, with a percentage between 0 (exclusive), and 1 (inclusive) going to feeRecipient"
+          },
+          "wrapETH(uint256)": {
+            "notice": "Wraps the contract's ETH balance into WETH9"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/router/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol": "IPeripheryPaymentsWithFeeExtended"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/router/contracts/interfaces/IPeripheryPaymentsExtended.sol": {
+        "keccak256": "0x0951f1a9d7792135c99b1d387f3c7c16d74a6bb8a394dd8c9868487dc2628c5d",
+        "urls": [
+          "bzz-raw://ea954ee121bbc3ed3bec24867e5660a5ff10b2fb93cb0a2e730f59304c1c2393",
+          "dweb:/ipfs/Qmewb9ZTr1ybiLzrNGHw8kpJHnkVyF2JBWjFo9nNV8bnQE"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/router/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol": {
+        "keccak256": "0x87158fc0ce4469209c6ce174c2f9246a6dae2a1b0906e89949f239be8f69d469",
+        "urls": [
+          "bzz-raw://d46b7cd05e8091ca3028e43e58319247ded261f7acaa9000162310b5dd45fd61",
+          "dweb:/ipfs/QmWYNdFAEws1ggnYM8TmErNLGDfEtd1b1Q3D3hUrJdjjUH"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/interfaces/IPeripheryPayments.sol": {
+        "keccak256": "0x9f7d06f70bc237ffc6d3cb80c0035d28c1f08395e58aed0f5e85e0cbe402025b",
+        "urls": [
+          "bzz-raw://6637101237472ffd1cc53a8af074dd40bc2926f09825ccd1fecbee123b9afb3a",
+          "dweb:/ipfs/QmU9PBHq6ow64uRYC7q6p8pKuep7zeSN89fF2c3VCTVdV1"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol": {
+        "keccak256": "0x23ebe0ced112c7ca3869868874b691fcbb50f90c482580dc9ebe718bda34edfc",
+        "urls": [
+          "bzz-raw://689ebfcb90a26bf31af6e35456e41940c23d145cfc59d1ae5f6fa060945dd768",
+          "dweb:/ipfs/QmZxVsaUWqnEEsRcphuWBvuEExQxznztSmFUkMa5ks8AHY"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/router/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol",
+    "id": 8750,
+    "exportedSymbols": {
+      "IPeripheryPayments": [
+        33124
+      ],
+      "IPeripheryPaymentsExtended": [
+        8717
+      ],
+      "IPeripheryPaymentsWithFee": [
+        33157
+      ],
+      "IPeripheryPaymentsWithFeeExtended": [
+        8749
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:1242:49",
+    "nodes": [
+      {
+        "id": 8719,
+        "nodeType": "PragmaDirective",
+        "src": "45:24:49",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".5"
+        ]
+      },
+      {
+        "id": 8720,
+        "nodeType": "ImportDirective",
+        "src": "71:86:49",
+        "nodes": [],
+        "absolutePath": "src/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+        "file": "@pancakeswap/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+        "scope": 8750,
+        "sourceUnit": 33158,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 8721,
+        "nodeType": "ImportDirective",
+        "src": "159:42:49",
+        "nodes": [],
+        "absolutePath": "src/router/contracts/interfaces/IPeripheryPaymentsExtended.sol",
+        "file": "./IPeripheryPaymentsExtended.sol",
+        "scope": 8750,
+        "sourceUnit": 8718,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 8749,
+        "nodeType": "ContractDefinition",
+        "src": "313:973:49",
+        "nodes": [
+          {
+            "id": 8736,
+            "nodeType": "FunctionDefinition",
+            "src": "699:137:49",
+            "nodes": [],
+            "documentation": {
+              "id": 8727,
+              "nodeType": "StructuredDocumentation",
+              "src": "420:274:49",
+              "text": "@notice Unwraps the contract's WETH9 balance and sends it to msg.sender as ETH, with a percentage between\n 0 (exclusive), and 1 (inclusive) going to feeRecipient\n @dev The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users."
+            },
+            "functionSelector": "d4ef38de",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unwrapWETH9WithFee",
+            "parameters": {
+              "id": 8734,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8729,
+                  "mutability": "mutable",
+                  "name": "amountMinimum",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8736,
+                  "src": "736:21:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8728,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "736:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8731,
+                  "mutability": "mutable",
+                  "name": "feeBips",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8736,
+                  "src": "767:15:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8730,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "767:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8733,
+                  "mutability": "mutable",
+                  "name": "feeRecipient",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8736,
+                  "src": "792:20:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8732,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "792:7:49",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "726:92:49"
+            },
+            "returnParameters": {
+              "id": 8735,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "835:0:49"
+            },
+            "scope": 8749,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 8748,
+            "nodeType": "FunctionDefinition",
+            "src": "1125:159:49",
+            "nodes": [],
+            "documentation": {
+              "id": 8737,
+              "nodeType": "StructuredDocumentation",
+              "src": "842:278:49",
+              "text": "@notice Transfers the full amount of a token held by this contract to msg.sender, with a percentage between\n 0 (exclusive) and 1 (inclusive) going to feeRecipient\n @dev The amountMinimum parameter prevents malicious contracts from stealing the token from users"
+            },
+            "functionSelector": "3068c554",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sweepTokenWithFee",
+            "parameters": {
+              "id": 8746,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8739,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8748,
+                  "src": "1161:13:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8738,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1161:7:49",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8741,
+                  "mutability": "mutable",
+                  "name": "amountMinimum",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8748,
+                  "src": "1184:21:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8740,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1184:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8743,
+                  "mutability": "mutable",
+                  "name": "feeBips",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8748,
+                  "src": "1215:15:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8742,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1215:7:49",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8745,
+                  "mutability": "mutable",
+                  "name": "feeRecipient",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8748,
+                  "src": "1240:20:49",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8744,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1240:7:49",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1151:115:49"
+            },
+            "returnParameters": {
+              "id": 8747,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1283:0:49"
+            },
+            "scope": 8749,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 8723,
+              "name": "IPeripheryPaymentsExtended",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8717,
+              "src": "360:26:49",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IPeripheryPaymentsExtended_$8717",
+                "typeString": "contract IPeripheryPaymentsExtended"
+              }
+            },
+            "id": 8724,
+            "nodeType": "InheritanceSpecifier",
+            "src": "360:26:49"
+          },
+          {
+            "baseName": {
+              "id": 8725,
+              "name": "IPeripheryPaymentsWithFee",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 33157,
+              "src": "388:25:49",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IPeripheryPaymentsWithFee_$33157",
+                "typeString": "contract IPeripheryPaymentsWithFee"
+              }
+            },
+            "id": 8726,
+            "nodeType": "InheritanceSpecifier",
+            "src": "388:25:49"
+          }
+        ],
+        "contractDependencies": [
+          8717,
+          33124,
+          33157
+        ],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 8722,
+          "nodeType": "StructuredDocumentation",
+          "src": "203:110:49",
+          "text": "@title Periphery Payments With Fee Extended\n @notice Functions to ease deposits and withdrawals of ETH"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          8749,
+          33157,
+          8717,
+          33124
+        ],
+        "name": "IPeripheryPaymentsWithFeeExtended",
+        "scope": 8750
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 49
+}

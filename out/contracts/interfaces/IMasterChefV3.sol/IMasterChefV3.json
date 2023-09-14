@@ -1,0 +1,373 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_v3Pool",
+          "type": "address"
+        }
+      ],
+      "name": "getLatestPeriodInfo",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "cakePerSecond",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nonfungiblePositionManager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLatestPeriodInfo(address)": "a15ea89f",
+    "nonfungiblePositionManager()": "b44a2722"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_v3Pool\",\"type\":\"address\"}],\"name\":\"getLatestPeriodInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"cakePerSecond\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nonfungiblePositionManager\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/v3-lm-pool/contracts/interfaces/IMasterChefV3.sol\":\"IMasterChefV3\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/v3-lm-pool/contracts/interfaces/IMasterChefV3.sol\":{\"keccak256\":\"0x148e16136cbbb8463e5f9a8cd3442e193555916ddad2ed11d390738f7ee23f81\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b1aa03f728e086dad590a68cbbf72b4bbeafba3c9f661610ba417dc55502c5f1\",\"dweb:/ipfs/QmTR5Z2kfQPNDGEWjoDzbHo1aELx7bYtMm4WABscVgPgDQ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_v3Pool",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLatestPeriodInfo",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "cakePerSecond",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endTime",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "nonfungiblePositionManager",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/v3-lm-pool/contracts/interfaces/IMasterChefV3.sol": "IMasterChefV3"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/v3-lm-pool/contracts/interfaces/IMasterChefV3.sol": {
+        "keccak256": "0x148e16136cbbb8463e5f9a8cd3442e193555916ddad2ed11d390738f7ee23f81",
+        "urls": [
+          "bzz-raw://b1aa03f728e086dad590a68cbbf72b4bbeafba3c9f661610ba417dc55502c5f1",
+          "dweb:/ipfs/QmTR5Z2kfQPNDGEWjoDzbHo1aELx7bYtMm4WABscVgPgDQ"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/v3-lm-pool/contracts/interfaces/IMasterChefV3.sol",
+    "id": 26566,
+    "exportedSymbols": {
+      "IMasterChefV3": [
+        26565
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:243:129",
+    "nodes": [
+      {
+        "id": 26550,
+        "nodeType": "PragmaDirective",
+        "src": "45:23:129",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 26565,
+        "nodeType": "ContractDefinition",
+        "src": "70:217:129",
+        "nodes": [
+          {
+            "id": 26555,
+            "nodeType": "FunctionDefinition",
+            "src": "100:70:129",
+            "nodes": [],
+            "functionSelector": "b44a2722",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nonfungiblePositionManager",
+            "parameters": {
+              "id": 26551,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "135:2:129"
+            },
+            "returnParameters": {
+              "id": 26554,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26553,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26555,
+                  "src": "161:7:129",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26552,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "161:7:129",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "160:9:129"
+            },
+            "scope": 26565,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 26564,
+            "nodeType": "FunctionDefinition",
+            "src": "176:109:129",
+            "nodes": [],
+            "functionSelector": "a15ea89f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestPeriodInfo",
+            "parameters": {
+              "id": 26558,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26557,
+                  "mutability": "mutable",
+                  "name": "_v3Pool",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26564,
+                  "src": "205:15:129",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 26556,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "205:7:129",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "204:17:129"
+            },
+            "returnParameters": {
+              "id": 26563,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26560,
+                  "mutability": "mutable",
+                  "name": "cakePerSecond",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26564,
+                  "src": "245:21:129",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26559,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:7:129",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 26562,
+                  "mutability": "mutable",
+                  "name": "endTime",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26564,
+                  "src": "268:15:129",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26561,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:7:129",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "244:40:129"
+            },
+            "scope": 26565,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          26565
+        ],
+        "name": "IMasterChefV3",
+        "scope": 26566
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 129
+}

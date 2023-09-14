@@ -1,0 +1,908 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "getPairInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "swapContract",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "LPContract",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IStableSwapFactory.StableSwapPairInfo",
+          "name": "info",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "getThreePoolPairInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "swapContract",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token2",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "LPContract",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IStableSwapFactory.StableSwapThreePoolPairInfo",
+          "name": "info",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pairLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getPairInfo(address,address)": "400f7a1e",
+    "getThreePoolPairInfo(address,address)": "923093cb",
+    "pairLength()": "fcc9136c"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_tokenB\",\"type\":\"address\"}],\"name\":\"getPairInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"swapContract\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"LPContract\",\"type\":\"address\"}],\"internalType\":\"struct IStableSwapFactory.StableSwapPairInfo\",\"name\":\"info\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_tokenB\",\"type\":\"address\"}],\"name\":\"getThreePoolPairInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"swapContract\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token2\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"LPContract\",\"type\":\"address\"}],\"internalType\":\"struct IStableSwapFactory.StableSwapThreePoolPairInfo\",\"name\":\"info\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pairLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/router/contracts/interfaces/IStableSwapFactory.sol\":\"IStableSwapFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/router/contracts/interfaces/IStableSwapFactory.sol\":{\"keccak256\":\"0x213b82c9908d85d107e986ac07816d9e599c5168dac6b2daa97a1f86a6cb3148\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fdf21fdc9e98b7a59cb675b2deb7b447b8b79f889ea6ea578d9eb0e7c0be61a6\",\"dweb:/ipfs/QmUFsgP5sdkraWFsnQykd8QuYFNEz9VQWAoTkbLAoyHwoG\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_tokenA",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_tokenB",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPairInfo",
+          "outputs": [
+            {
+              "internalType": "struct IStableSwapFactory.StableSwapPairInfo",
+              "name": "info",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "swapContract",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "LPContract",
+                  "type": "address"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_tokenA",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "_tokenB",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getThreePoolPairInfo",
+          "outputs": [
+            {
+              "internalType": "struct IStableSwapFactory.StableSwapThreePoolPairInfo",
+              "name": "info",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "swapContract",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token0",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token1",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token2",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "LPContract",
+                  "type": "address"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "pairLength",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/router/contracts/interfaces/IStableSwapFactory.sol": "IStableSwapFactory"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/router/contracts/interfaces/IStableSwapFactory.sol": {
+        "keccak256": "0x213b82c9908d85d107e986ac07816d9e599c5168dac6b2daa97a1f86a6cb3148",
+        "urls": [
+          "bzz-raw://fdf21fdc9e98b7a59cb675b2deb7b447b8b79f889ea6ea578d9eb0e7c0be61a6",
+          "dweb:/ipfs/QmUFsgP5sdkraWFsnQykd8QuYFNEz9VQWAoTkbLAoyHwoG"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/router/contracts/interfaces/IStableSwapFactory.sol",
+    "id": 9018,
+    "exportedSymbols": {
+      "IStableSwapFactory": [
+        9017
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:812:54",
+    "nodes": [
+      {
+        "id": 8972,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:54",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 8973,
+        "nodeType": "PragmaDirective",
+        "src": "56:19:54",
+        "nodes": [],
+        "literals": [
+          "abicoder",
+          "v2"
+        ]
+      },
+      {
+        "id": 9017,
+        "nodeType": "ContractDefinition",
+        "src": "77:766:54",
+        "nodes": [
+          {
+            "id": 8982,
+            "nodeType": "StructDefinition",
+            "src": "112:139:54",
+            "nodes": [],
+            "canonicalName": "IStableSwapFactory.StableSwapPairInfo",
+            "members": [
+              {
+                "constant": false,
+                "id": 8975,
+                "mutability": "mutable",
+                "name": "swapContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 8982,
+                "src": "148:20:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8974,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "148:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8977,
+                "mutability": "mutable",
+                "name": "token0",
+                "nodeType": "VariableDeclaration",
+                "scope": 8982,
+                "src": "178:14:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8976,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "178:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8979,
+                "mutability": "mutable",
+                "name": "token1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8982,
+                "src": "202:14:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8978,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "202:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8981,
+                "mutability": "mutable",
+                "name": "LPContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 8982,
+                "src": "226:18:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8980,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "226:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "StableSwapPairInfo",
+            "scope": 9017,
+            "visibility": "public"
+          },
+          {
+            "id": 8993,
+            "nodeType": "StructDefinition",
+            "src": "257:172:54",
+            "nodes": [],
+            "canonicalName": "IStableSwapFactory.StableSwapThreePoolPairInfo",
+            "members": [
+              {
+                "constant": false,
+                "id": 8984,
+                "mutability": "mutable",
+                "name": "swapContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 8993,
+                "src": "302:20:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8983,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "302:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8986,
+                "mutability": "mutable",
+                "name": "token0",
+                "nodeType": "VariableDeclaration",
+                "scope": 8993,
+                "src": "332:14:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8985,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "332:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8988,
+                "mutability": "mutable",
+                "name": "token1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8993,
+                "src": "356:14:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8987,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "356:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8990,
+                "mutability": "mutable",
+                "name": "token2",
+                "nodeType": "VariableDeclaration",
+                "scope": 8993,
+                "src": "380:14:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8989,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "380:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8992,
+                "mutability": "mutable",
+                "name": "LPContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 8993,
+                "src": "404:18:54",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8991,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "404:7:54",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "StableSwapThreePoolPairInfo",
+            "scope": 9017,
+            "visibility": "public"
+          },
+          {
+            "id": 8998,
+            "nodeType": "FunctionDefinition",
+            "src": "477:54:54",
+            "nodes": [],
+            "functionSelector": "fcc9136c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pairLength",
+            "parameters": {
+              "id": 8994,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "496:2:54"
+            },
+            "returnParameters": {
+              "id": 8997,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8996,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8998,
+                  "src": "522:7:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8995,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:7:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "521:9:54"
+            },
+            "scope": 9017,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 9007,
+            "nodeType": "FunctionDefinition",
+            "src": "537:137:54",
+            "nodes": [],
+            "functionSelector": "400f7a1e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPairInfo",
+            "parameters": {
+              "id": 9003,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9000,
+                  "mutability": "mutable",
+                  "name": "_tokenA",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9007,
+                  "src": "558:15:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8999,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "558:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9002,
+                  "mutability": "mutable",
+                  "name": "_tokenB",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9007,
+                  "src": "575:15:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9001,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "575:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "557:34:54"
+            },
+            "returnParameters": {
+              "id": 9006,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9005,
+                  "mutability": "mutable",
+                  "name": "info",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9007,
+                  "src": "642:30:54",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StableSwapPairInfo_$8982_memory_ptr",
+                    "typeString": "struct IStableSwapFactory.StableSwapPairInfo"
+                  },
+                  "typeName": {
+                    "id": 9004,
+                    "name": "StableSwapPairInfo",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8982,
+                    "src": "642:18:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_StableSwapPairInfo_$8982_storage_ptr",
+                      "typeString": "struct IStableSwapFactory.StableSwapPairInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "641:32:54"
+            },
+            "scope": 9017,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 9016,
+            "nodeType": "FunctionDefinition",
+            "src": "680:152:54",
+            "nodes": [],
+            "functionSelector": "923093cb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getThreePoolPairInfo",
+            "parameters": {
+              "id": 9012,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9009,
+                  "mutability": "mutable",
+                  "name": "_tokenA",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9016,
+                  "src": "710:15:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9008,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9011,
+                  "mutability": "mutable",
+                  "name": "_tokenB",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9016,
+                  "src": "727:15:54",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9010,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "727:7:54",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "709:34:54"
+            },
+            "returnParameters": {
+              "id": 9015,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9014,
+                  "mutability": "mutable",
+                  "name": "info",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9016,
+                  "src": "791:39:54",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StableSwapThreePoolPairInfo_$8993_memory_ptr",
+                    "typeString": "struct IStableSwapFactory.StableSwapThreePoolPairInfo"
+                  },
+                  "typeName": {
+                    "id": 9013,
+                    "name": "StableSwapThreePoolPairInfo",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8993,
+                    "src": "791:27:54",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_StableSwapThreePoolPairInfo_$8993_storage_ptr",
+                      "typeString": "struct IStableSwapFactory.StableSwapThreePoolPairInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "790:41:54"
+            },
+            "scope": 9017,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          9017
+        ],
+        "name": "IStableSwapFactory",
+        "scope": 9018
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 54
+}
