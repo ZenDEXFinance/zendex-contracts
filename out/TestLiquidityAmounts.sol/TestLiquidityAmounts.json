@@ -1,0 +1,583 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint160",
+          "name": "sqrtRatioX96",
+          "type": "uint160"
+        },
+        {
+          "internalType": "uint160",
+          "name": "sqrtRatioAX96",
+          "type": "uint160"
+        },
+        {
+          "internalType": "uint160",
+          "name": "sqrtRatioBX96",
+          "type": "uint160"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLiquidityForAmounts",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "liquidity",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610314806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80636098fd4a14610030575b600080fd5b610072600480360360a081101561004657600080fd5b506001600160a01b0381358116916020810135821691604082013516906060810135906080013561008e565b604080516001600160801b039092168252519081900360200190f35b600061009d86868686866100a9565b90505b95945050505050565b6000836001600160a01b0316856001600160a01b031611156100c9579293925b846001600160a01b0316866001600160a01b0316116100f4576100ed858585610161565b90506100a0565b836001600160a01b0316866001600160a01b0316101561015657600061011b878686610161565b9050600061012a8789866101cf565b9050806001600160801b0316826001600160801b03161061014b578061014d565b815b925050506100a0565b61009d8585846101cf565b6000826001600160a01b0316846001600160a01b03161115610181579192915b60006101a4856001600160a01b0316856001600160a01b0316600160601b610214565b90506101c46101bf84838888036001600160a01b0316610214565b6102c3565b9150505b9392505050565b6000826001600160a01b0316846001600160a01b031611156101ef579192915b61020c6101bf83600160601b8787036001600160a01b0316610214565b949350505050565b600080806000198587098686029250828110908390030390508061024a576000841161023f57600080fd5b5082900490506101c8565b80841161025657600080fd5b6000848688096000868103871696879004966002600389028118808a02820302808a02820302808a02820302808a02820302808a02820302808a02909103029181900381900460010186841190950394909402919094039290920491909117919091029150509392505050565b806001600160801b03811681146102d957600080fd5b91905056fea2646970667358221220758654a028282c81590dfe45add2a5707d8d4b5e7710a3a9c0dea2e0d14e7ccc64736f6c63430007060033",
+    "sourceMap": "104:391:31:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80636098fd4a14610030575b600080fd5b610072600480360360a081101561004657600080fd5b506001600160a01b0381358116916020810135821691604082013516906060810135906080013561008e565b604080516001600160801b039092168252519081900360200190f35b600061009d86868686866100a9565b90505b95945050505050565b6000836001600160a01b0316856001600160a01b031611156100c9579293925b846001600160a01b0316866001600160a01b0316116100f4576100ed858585610161565b90506100a0565b836001600160a01b0316866001600160a01b0316101561015657600061011b878686610161565b9050600061012a8789866101cf565b9050806001600160801b0316826001600160801b03161061014b578061014d565b815b925050506100a0565b61009d8585846101cf565b6000826001600160a01b0316846001600160a01b03161115610181579192915b60006101a4856001600160a01b0316856001600160a01b0316600160601b610214565b90506101c46101bf84838888036001600160a01b0316610214565b6102c3565b9150505b9392505050565b6000826001600160a01b0316846001600160a01b031611156101ef579192915b61020c6101bf83600160601b8787036001600160a01b0316610214565b949350505050565b600080806000198587098686029250828110908390030390508061024a576000841161023f57600080fd5b5082900490506101c8565b80841161025657600080fd5b6000848688096000868103871696879004966002600389028118808a02820302808a02820302808a02820302808a02820302808a02820302808a02909103029181900381900460010186841190950394909402919094039290920491909117919091029150509392505050565b806001600160801b03811681146102d957600080fd5b91905056fea2646970667358221220758654a028282c81590dfe45add2a5707d8d4b5e7710a3a9c0dea2e0d14e7ccc64736f6c63430007060033",
+    "sourceMap": "104:391:31:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;138:355;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;138:355:31;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;;;;138:355:31;;;;;;;;;;;;;;;319:17;351:137;398:12;418:13;439;460:7;475;351:39;:137::i;:::-;344:144;;138:355;;;;;;;;:::o;2990:901:174:-;3193:17;3242:13;-1:-1:-1;;;;;3226:29:174;:13;-1:-1:-1;;;;;3226:29:174;;3222:98;;;3291:13;;3306;3222:98;3351:13;-1:-1:-1;;;;;3335:29:174;:12;-1:-1:-1;;;;;3335:29:174;;3331:554;;3392:61;3415:13;3430;3445:7;3392:22;:61::i;:::-;3380:73;;3331:554;;;3489:13;-1:-1:-1;;;;;3474:28:174;:12;-1:-1:-1;;;;;3474:28:174;;3470:415;;;3518:18;3539:60;3562:12;3576:13;3591:7;3539:22;:60::i;:::-;3518:81;;3613:18;3634:60;3657:13;3672:12;3686:7;3634:22;:60::i;:::-;3613:81;;3734:10;-1:-1:-1;;;;;3721:23:174;:10;-1:-1:-1;;;;;3721:23:174;;:49;;3760:10;3721:49;;;3747:10;3721:49;3709:61;;3470:415;;;;;3813:61;3836:13;3851;3866:7;3813:22;:61::i;1093:475::-;1241:17;1290:13;-1:-1:-1;;;;;1274:29:174;:13;-1:-1:-1;;;;;1274:29:174;;1270:98;;;1339:13;;1354;1270:98;1378:20;1401:63;1417:13;-1:-1:-1;;;;;1401:63:174;1432:13;-1:-1:-1;;;;;1401:63:174;-1:-1:-1;;;1401:15:174;:63::i;:::-;1378:86;;1481:80;1491:69;1507:7;1516:12;1546:13;1530;:29;-1:-1:-1;;;;;1491:69:174;:15;:69::i;:::-;1481:9;:80::i;:::-;1474:87;;;1093:475;;;;;;:::o;2007:383::-;2155:17;2204:13;-1:-1:-1;;;;;2188:29:174;:13;-1:-1:-1;;;;;2188:29:174;;2184:98;;;2253:13;;2268;2184:98;2299:84;2309:73;2325:7;-1:-1:-1;;;2368:13:174;2352;:29;-1:-1:-1;;;;;2309:73:174;:15;:73::i;2299:84::-;2292:91;2007:383;-1:-1:-1;;;;2007:383:174:o;762:3776:86:-;874:14;;;-1:-1:-1;;1381:1:86;1378;1371:20;1413:9;;;;-1:-1:-1;1464:13:86;;;1448:14;;;;1444:34;;-1:-1:-1;1560:10:86;1556:179;;1608:1;1594:11;:15;1586:24;;;;;;-1:-1:-1;1661:23:86;;;;-1:-1:-1;1711:13:86;;1556:179;1862:5;1848:11;:19;1840:28;;;;;;2145:17;2221:11;2218:1;2215;2208:25;2573:12;2588;;;:26;;2708:22;;;;;3511:1;3492;:15;;3491:21;;3738:17;;;3734:21;;3727:28;3796:17;;;3792:21;;3785:28;3855:17;;;3851:21;;3844:28;3914:17;;;3910:21;;3903:28;3973:17;;;3969:21;;3962:28;4033:17;;;4029:21;;;4022:28;3080:12;;;;3076:23;;;3101:1;3072:31;2350:20;;;2339:32;;;3131:12;;;;2393:21;;;;2836:16;;;;3122:21;;;;4497:11;;;;;-1:-1:-1;;762:3776:86;;;;;:::o;515:110:174:-;616:1;-1:-1:-1;;;;;596:21:174;;;;588:30;;;;;;515:110;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLiquidityForAmounts(uint160,uint160,uint160,uint256,uint256)": "6098fd4a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint160\",\"name\":\"sqrtRatioX96\",\"type\":\"uint160\"},{\"internalType\":\"uint160\",\"name\":\"sqrtRatioAX96\",\"type\":\"uint160\"},{\"internalType\":\"uint160\",\"name\":\"sqrtRatioBX96\",\"type\":\"uint160\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"}],\"name\":\"getLiquidityForAmounts\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/masterchef-v3/test/TestLiquidityAmounts.sol\":\"TestLiquidityAmounts\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/masterchef-v3/test/TestLiquidityAmounts.sol\":{\"keccak256\":\"0x1c10022a53c431438f5578ff005d0ab931b1683bf601e04b0d82d6a0b2d9c6d7\",\"urls\":[\"bzz-raw://302151c72bdceb429d85179edc7641465a7ff3874337f5d2e848b287c229f3c8\",\"dweb:/ipfs/QmXfEogepZLnt9Jinsw5HSGuavnHGFQ3NKkjMgVUkTvqWL\"]},\"src/v3-core/contracts/libraries/FixedPoint96.sol\":{\"keccak256\":\"0x0ba8a9b95a956a4050749c0158e928398c447c91469682ca8a7cc7e77a7fe032\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://186d3b528866065a5856f96d2aeec698efa99f8da913e9adf34f8cc296cc993d\",\"dweb:/ipfs/QmUAiMvtAQp8c9dy57bqJYzG7hkb1uChiPaQmt264skoqP\"]},\"src/v3-core/contracts/libraries/FullMath.sol\":{\"keccak256\":\"0xbefbff1aed686bac4be2ed1569a29f88649cfa17c45f417db81d6a2202fc1518\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6dac2bb25c624ab93711649cfa5735603c37285964c102e456b81cfe64d862b6\",\"dweb:/ipfs/QmRzLrrJ4QSmaE2hRmB69PzxTewavysupU3hmZgezLEQ72\"]},\"src/v3-periphery/contracts/libraries/LiquidityAmounts.sol\":{\"keccak256\":\"0x35fb88f9af5e3befd627df8593852e2e1c54569d922216e07082f3c390df216a\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b5669c4d7d436e376c08d7a5dc22e2b04e6f8450ade3448865e0b0474b2441d7\",\"dweb:/ipfs/QmVWJzbvPfPM86wD2QCrRxmKoq1DLdrvaLiX86jjjWd79m\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint160",
+              "name": "sqrtRatioX96",
+              "type": "uint160"
+            },
+            {
+              "internalType": "uint160",
+              "name": "sqrtRatioAX96",
+              "type": "uint160"
+            },
+            {
+              "internalType": "uint160",
+              "name": "sqrtRatioBX96",
+              "type": "uint160"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount1",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getLiquidityForAmounts",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "liquidity",
+              "type": "uint128"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/masterchef-v3/test/TestLiquidityAmounts.sol": "TestLiquidityAmounts"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/masterchef-v3/test/TestLiquidityAmounts.sol": {
+        "keccak256": "0x1c10022a53c431438f5578ff005d0ab931b1683bf601e04b0d82d6a0b2d9c6d7",
+        "urls": [
+          "bzz-raw://302151c72bdceb429d85179edc7641465a7ff3874337f5d2e848b287c229f3c8",
+          "dweb:/ipfs/QmXfEogepZLnt9Jinsw5HSGuavnHGFQ3NKkjMgVUkTvqWL"
+        ],
+        "license": null
+      },
+      "src/v3-core/contracts/libraries/FixedPoint96.sol": {
+        "keccak256": "0x0ba8a9b95a956a4050749c0158e928398c447c91469682ca8a7cc7e77a7fe032",
+        "urls": [
+          "bzz-raw://186d3b528866065a5856f96d2aeec698efa99f8da913e9adf34f8cc296cc993d",
+          "dweb:/ipfs/QmUAiMvtAQp8c9dy57bqJYzG7hkb1uChiPaQmt264skoqP"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/libraries/FullMath.sol": {
+        "keccak256": "0xbefbff1aed686bac4be2ed1569a29f88649cfa17c45f417db81d6a2202fc1518",
+        "urls": [
+          "bzz-raw://6dac2bb25c624ab93711649cfa5735603c37285964c102e456b81cfe64d862b6",
+          "dweb:/ipfs/QmRzLrrJ4QSmaE2hRmB69PzxTewavysupU3hmZgezLEQ72"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/libraries/LiquidityAmounts.sol": {
+        "keccak256": "0x35fb88f9af5e3befd627df8593852e2e1c54569d922216e07082f3c390df216a",
+        "urls": [
+          "bzz-raw://b5669c4d7d436e376c08d7a5dc22e2b04e6f8450ade3448865e0b0474b2441d7",
+          "dweb:/ipfs/QmVWJzbvPfPM86wD2QCrRxmKoq1DLdrvaLiX86jjjWd79m"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/masterchef-v3/test/TestLiquidityAmounts.sol",
+    "id": 5680,
+    "exportedSymbols": {
+      "FixedPoint96": [
+        16925
+      ],
+      "FullMath": [
+        17098
+      ],
+      "LiquidityAmounts": [
+        35603
+      ],
+      "TestLiquidityAmounts": [
+        5679
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "0:496:31",
+    "nodes": [
+      {
+        "id": 5652,
+        "nodeType": "PragmaDirective",
+        "src": "0:24:31",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ]
+      },
+      {
+        "id": 5653,
+        "nodeType": "ImportDirective",
+        "src": "26:76:31",
+        "nodes": [],
+        "absolutePath": "src/v3-periphery/contracts/libraries/LiquidityAmounts.sol",
+        "file": "@pancakeswap/v3-periphery/contracts/libraries/LiquidityAmounts.sol",
+        "scope": 5680,
+        "sourceUnit": 35604,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 5679,
+        "nodeType": "ContractDefinition",
+        "src": "104:391:31",
+        "nodes": [
+          {
+            "id": 5678,
+            "nodeType": "FunctionDefinition",
+            "src": "138:355:31",
+            "nodes": [],
+            "body": {
+              "id": 5677,
+              "nodeType": "Block",
+              "src": "338:155:31",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 5670,
+                        "name": "sqrtRatioX96",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5655,
+                        "src": "398:12:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        }
+                      },
+                      {
+                        "id": 5671,
+                        "name": "sqrtRatioAX96",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5657,
+                        "src": "418:13:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        }
+                      },
+                      {
+                        "id": 5672,
+                        "name": "sqrtRatioBX96",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5659,
+                        "src": "439:13:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        }
+                      },
+                      {
+                        "id": 5673,
+                        "name": "amount0",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5661,
+                        "src": "460:7:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 5674,
+                        "name": "amount1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5663,
+                        "src": "475:7:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        },
+                        {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        },
+                        {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 5668,
+                        "name": "LiquidityAmounts",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 35603,
+                        "src": "351:16:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_LiquidityAmounts_$35603_$",
+                          "typeString": "type(library LiquidityAmounts)"
+                        }
+                      },
+                      "id": 5669,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getLiquidityForAmounts",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 35453,
+                      "src": "351:39:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint160_$_t_uint160_$_t_uint160_$_t_uint256_$_t_uint256_$returns$_t_uint128_$",
+                        "typeString": "function (uint160,uint160,uint160,uint256,uint256) pure returns (uint128)"
+                      }
+                    },
+                    "id": 5675,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "351:137:31",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "functionReturnParameters": 5667,
+                  "id": 5676,
+                  "nodeType": "Return",
+                  "src": "344:144:31"
+                }
+              ]
+            },
+            "functionSelector": "6098fd4a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLiquidityForAmounts",
+            "parameters": {
+              "id": 5664,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5655,
+                  "mutability": "mutable",
+                  "name": "sqrtRatioX96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5678,
+                  "src": "175:20:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 5654,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "175:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5657,
+                  "mutability": "mutable",
+                  "name": "sqrtRatioAX96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5678,
+                  "src": "201:21:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 5656,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "201:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5659,
+                  "mutability": "mutable",
+                  "name": "sqrtRatioBX96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5678,
+                  "src": "228:21:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 5658,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "228:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5661,
+                  "mutability": "mutable",
+                  "name": "amount0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5678,
+                  "src": "255:15:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5660,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "255:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5663,
+                  "mutability": "mutable",
+                  "name": "amount1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5678,
+                  "src": "276:15:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5662,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "276:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:126:31"
+            },
+            "returnParameters": {
+              "id": 5667,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5666,
+                  "mutability": "mutable",
+                  "name": "liquidity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5678,
+                  "src": "319:17:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 5665,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "319:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "318:19:31"
+            },
+            "scope": 5679,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          5679
+        ],
+        "name": "TestLiquidityAmounts",
+        "scope": 5680
+      }
+    ]
+  },
+  "id": 31
+}

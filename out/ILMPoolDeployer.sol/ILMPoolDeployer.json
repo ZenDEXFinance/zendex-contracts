@@ -1,0 +1,329 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPancakeV3Pool",
+          "name": "pool",
+          "type": "address"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "contract ILMPool",
+          "name": "lmPool",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deploy(address)": "4c96a389"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IPancakeV3Pool\",\"name\":\"pool\",\"type\":\"address\"}],\"name\":\"deploy\",\"outputs\":[{\"internalType\":\"contract ILMPool\",\"name\":\"lmPool\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/masterchef-v3/contracts/interfaces/ILMPoolDeployer.sol\":\"ILMPoolDeployer\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/masterchef-v3/contracts/interfaces/ILMPool.sol\":{\"keccak256\":\"0x623205658ee2154a49d4de6ef187a6696bb359d834f32b705b30a86fafbe9faf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9a364f502e090b797ef12860f2d1c2a53c50abcc2aae517068ec05d6b7069c98\",\"dweb:/ipfs/QmfAx53ZEmKHf76rneHZTuijGkKoJVzyiop1UUZCarPPry\"]},\"src/masterchef-v3/contracts/interfaces/ILMPoolDeployer.sol\":{\"keccak256\":\"0xa67754d2dece9a8cb0a705e1d7aca851242eed86f44bc6750a26332d3be7341e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://57f98e9e453352fc734cd26d4d41df8761ffb7004e134fb82b0d89c4aa165584\",\"dweb:/ipfs/QmdrUHy7sA6eVkPXtjEttuGC9uY2BKoNGKDNrfSq4J8mwb\"]},\"src/masterchef-v3/contracts/interfaces/IPancakeV3Pool.sol\":{\"keccak256\":\"0xb1495ce8a35b4498210391c7509861a03cb500fef5fc4d533615eef8ff57f109\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f262b51aec989d309df9653ecb08d797bdc8226ac40d60c4681920c8c139c7b2\",\"dweb:/ipfs/QmYGGDkKur9CcB1CocPguvye931wMaYsGQpcqev9f4eMso\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IPancakeV3Pool",
+              "name": "pool",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deploy",
+          "outputs": [
+            {
+              "internalType": "contract ILMPool",
+              "name": "lmPool",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/masterchef-v3/contracts/interfaces/ILMPoolDeployer.sol": "ILMPoolDeployer"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/masterchef-v3/contracts/interfaces/ILMPool.sol": {
+        "keccak256": "0x623205658ee2154a49d4de6ef187a6696bb359d834f32b705b30a86fafbe9faf",
+        "urls": [
+          "bzz-raw://9a364f502e090b797ef12860f2d1c2a53c50abcc2aae517068ec05d6b7069c98",
+          "dweb:/ipfs/QmfAx53ZEmKHf76rneHZTuijGkKoJVzyiop1UUZCarPPry"
+        ],
+        "license": "MIT"
+      },
+      "src/masterchef-v3/contracts/interfaces/ILMPoolDeployer.sol": {
+        "keccak256": "0xa67754d2dece9a8cb0a705e1d7aca851242eed86f44bc6750a26332d3be7341e",
+        "urls": [
+          "bzz-raw://57f98e9e453352fc734cd26d4d41df8761ffb7004e134fb82b0d89c4aa165584",
+          "dweb:/ipfs/QmdrUHy7sA6eVkPXtjEttuGC9uY2BKoNGKDNrfSq4J8mwb"
+        ],
+        "license": "MIT"
+      },
+      "src/masterchef-v3/contracts/interfaces/IPancakeV3Pool.sol": {
+        "keccak256": "0xb1495ce8a35b4498210391c7509861a03cb500fef5fc4d533615eef8ff57f109",
+        "urls": [
+          "bzz-raw://f262b51aec989d309df9653ecb08d797bdc8226ac40d60c4681920c8c139c7b2",
+          "dweb:/ipfs/QmYGGDkKur9CcB1CocPguvye931wMaYsGQpcqev9f4eMso"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/masterchef-v3/contracts/interfaces/ILMPoolDeployer.sol",
+    "id": 47215,
+    "exportedSymbols": {
+      "ILMPool": [
+        47200
+      ],
+      "ILMPoolDeployer": [
+        47214
+      ],
+      "IPancakeV3Pool": [
+        47436
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:188:34",
+    "nodes": [
+      {
+        "id": 47202,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:34",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".10"
+        ]
+      },
+      {
+        "id": 47203,
+        "nodeType": "ImportDirective",
+        "src": "58:30:34",
+        "nodes": [],
+        "absolutePath": "src/masterchef-v3/contracts/interfaces/IPancakeV3Pool.sol",
+        "file": "./IPancakeV3Pool.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 47215,
+        "sourceUnit": 47437,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 47204,
+        "nodeType": "ImportDirective",
+        "src": "89:23:34",
+        "nodes": [],
+        "absolutePath": "src/masterchef-v3/contracts/interfaces/ILMPool.sol",
+        "file": "./ILMPool.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 47215,
+        "sourceUnit": 47201,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 47214,
+        "nodeType": "ContractDefinition",
+        "src": "114:105:34",
+        "nodes": [
+          {
+            "id": 47213,
+            "nodeType": "FunctionDefinition",
+            "src": "146:71:34",
+            "nodes": [],
+            "functionSelector": "4c96a389",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nameLocation": "155:6:34",
+            "parameters": {
+              "id": 47208,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47207,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nameLocation": "177:4:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47213,
+                  "src": "162:19:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPancakeV3Pool_$47436",
+                    "typeString": "contract IPancakeV3Pool"
+                  },
+                  "typeName": {
+                    "id": 47206,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 47205,
+                      "name": "IPancakeV3Pool",
+                      "nameLocations": [
+                        "162:14:34"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 47436,
+                      "src": "162:14:34"
+                    },
+                    "referencedDeclaration": 47436,
+                    "src": "162:14:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPancakeV3Pool_$47436",
+                      "typeString": "contract IPancakeV3Pool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "161:21:34"
+            },
+            "returnParameters": {
+              "id": 47212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47211,
+                  "mutability": "mutable",
+                  "name": "lmPool",
+                  "nameLocation": "209:6:34",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47213,
+                  "src": "201:14:34",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ILMPool_$47200",
+                    "typeString": "contract ILMPool"
+                  },
+                  "typeName": {
+                    "id": 47210,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 47209,
+                      "name": "ILMPool",
+                      "nameLocations": [
+                        "201:7:34"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 47200,
+                      "src": "201:7:34"
+                    },
+                    "referencedDeclaration": 47200,
+                    "src": "201:7:34",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ILMPool_$47200",
+                      "typeString": "contract ILMPool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "200:16:34"
+            },
+            "scope": 47214,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILMPoolDeployer",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          47214
+        ],
+        "name": "ILMPoolDeployer",
+        "nameLocation": "124:15:34",
+        "scope": 47215,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 34
+}

@@ -1,0 +1,591 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPancakeV3Pool",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "internalType": "int24",
+          "name": "tickBefore",
+          "type": "int24"
+        },
+        {
+          "internalType": "int24",
+          "name": "tickAfter",
+          "type": "int24"
+        }
+      ],
+      "name": "countInitializedTicksCrossed",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "initializedTicksCrossed",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610853806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80634c5b941c14610030575b600080fd5b61004361003e366004610631565b61005c565b60405163ffffffff909116815260200160405180910390f35b60006100726001600160a01b038516848461007a565b949350505050565b60008060008060008060008060088b6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156100c6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100ea9190610688565b6100f4908c6106d8565b60020b901d905060006101008c6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa15801561013e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101629190610688565b61016c908d6106d8565b6101769190610712565b9050600060088d6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156101ba573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101de9190610688565b6101e8908d6106d8565b60020b901d905060006101008e6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610232573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102569190610688565b610260908e6106d8565b61026a9190610734565b905060008160ff166001901b8f6001600160a01b0316635339c296856040518263ffffffff1660e01b81526004016102ab919060019190910b815260200190565b602060405180830381865afa1580156102c8573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ec9190610756565b1611801561036657508d6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610333573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103579190610688565b610361908d610734565b60020b155b801561037757508b60020b8d60020b135b945060008360ff166001901b8f6001600160a01b0316635339c296876040518263ffffffff1660e01b81526004016103b8919060019190910b815260200190565b602060405180830381865afa1580156103d5573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103f99190610756565b1611801561047357508d6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610440573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104649190610688565b61046e908e610734565b60020b155b801561048457508b60020b8d60020b125b95508160010b8460010b12806104b057508160010b8460010b1480156104b057508060ff168360ff1611155b156104c6578399508297508198508096506104d3565b8199508097508398508296505b505060001960ff87161b9150505b8560010b8760010b136105b7578560010b8760010b03610512576105068460ff61076f565b60001960ff919091161c165b60405163299ce14b60e11b8152600188900b600482015260009082906001600160a01b038e1690635339c29690602401602060405180830381865afa15801561055f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105839190610756565b16905061058f816105ed565b61059d9061ffff168a610788565b9850876105a9816107ac565b9850506000199150506104e1565b81156105cb576105c86001896107cc565b97505b82156105df576105dc6001896107cc565b97505b505050505050509392505050565b6000805b82156106195780610601816107e9565b9150610610905060018461080a565b831692506105f1565b92915050565b8060020b811461062e57600080fd5b50565b60008060006060848603121561064657600080fd5b83356001600160a01b038116811461065d57600080fd5b9250602084013561066d8161061f565b9150604084013561067d8161061f565b809150509250925092565b60006020828403121561069a57600080fd5b81516106a58161061f565b9392505050565b634e487b7160e01b600052601260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b60008160020b8360020b806106ef576106ef6106ac565b627fffff19821460001982141615610709576107096106c2565b90059392505050565b600062ffffff80841680610728576107286106ac565b92169190910692915050565b60008260020b80610747576107476106ac565b808360020b0791505092915050565b60006020828403121561076857600080fd5b5051919050565b60ff8281168282160390811115610619576106196106c2565b63ffffffff8181168382160190808211156107a5576107a56106c2565b5092915050565b60008160010b617fff81036107c3576107c36106c2565b60010192915050565b63ffffffff8281168282160390808211156107a5576107a56106c2565b600061ffff808316818103610800576108006106c2565b6001019392505050565b81810381811115610619576106196106c256fea26469706673582212205be6c6de002344097d5ca21f91294b71cb5ca905d375a462cc070684edac175e64736f6c63430008150033",
+    "sourceMap": "188:345:102:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80634c5b941c14610030575b600080fd5b61004361003e366004610631565b61005c565b60405163ffffffff909116815260200160405180910390f35b60006100726001600160a01b038516848461007a565b949350505050565b60008060008060008060008060088b6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156100c6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100ea9190610688565b6100f4908c6106d8565b60020b901d905060006101008c6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa15801561013e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101629190610688565b61016c908d6106d8565b6101769190610712565b9050600060088d6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156101ba573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101de9190610688565b6101e8908d6106d8565b60020b901d905060006101008e6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610232573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102569190610688565b610260908e6106d8565b61026a9190610734565b905060008160ff166001901b8f6001600160a01b0316635339c296856040518263ffffffff1660e01b81526004016102ab919060019190910b815260200190565b602060405180830381865afa1580156102c8573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ec9190610756565b1611801561036657508d6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610333573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103579190610688565b610361908d610734565b60020b155b801561037757508b60020b8d60020b135b945060008360ff166001901b8f6001600160a01b0316635339c296876040518263ffffffff1660e01b81526004016103b8919060019190910b815260200190565b602060405180830381865afa1580156103d5573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103f99190610756565b1611801561047357508d6001600160a01b031663d0c93a7c6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610440573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104649190610688565b61046e908e610734565b60020b155b801561048457508b60020b8d60020b125b95508160010b8460010b12806104b057508160010b8460010b1480156104b057508060ff168360ff1611155b156104c6578399508297508198508096506104d3565b8199508097508398508296505b505060001960ff87161b9150505b8560010b8760010b136105b7578560010b8760010b03610512576105068460ff61076f565b60001960ff919091161c165b60405163299ce14b60e11b8152600188900b600482015260009082906001600160a01b038e1690635339c29690602401602060405180830381865afa15801561055f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105839190610756565b16905061058f816105ed565b61059d9061ffff168a610788565b9850876105a9816107ac565b9850506000199150506104e1565b81156105cb576105c86001896107cc565b97505b82156105df576105dc6001896107cc565b97505b505050505050509392505050565b6000805b82156106195780610601816107e9565b9150610610905060018461080a565b831692506105f1565b92915050565b8060020b811461062e57600080fd5b50565b60008060006060848603121561064657600080fd5b83356001600160a01b038116811461065d57600080fd5b9250602084013561066d8161061f565b9150604084013561067d8161061f565b809150509250925092565b60006020828403121561069a57600080fd5b81516106a58161061f565b9392505050565b634e487b7160e01b600052601260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b60008160020b8360020b806106ef576106ef6106ac565b627fffff19821460001982141615610709576107096106c2565b90059392505050565b600062ffffff80841680610728576107286106ac565b92169190910692915050565b60008260020b80610747576107476106ac565b808360020b0791505092915050565b60006020828403121561076857600080fd5b5051919050565b60ff8281168282160390811115610619576106196106c2565b63ffffffff8181168382160190808211156107a5576107a56106c2565b5092915050565b60008160010b617fff81036107c3576107c36106c2565b60010192915050565b63ffffffff8281168282160390808211156107a5576107a56106c2565b600061ffff808316818103610800576108006106c2565b6001019392505050565b81810381811115610619576106196106c256fea26469706673582212205be6c6de002344097d5ca21f91294b71cb5ca905d375a462cc070684edac175e64736f6c63430008150033",
+    "sourceMap": "188:345:102:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;272:259;;;;;;:::i;:::-;;:::i;:::-;;;900:10:105;888:23;;;870:42;;858:2;843:18;272:259:102;;;;;;;;419:30;468:56;-1:-1:-1;;;;;468:33:102;;502:10;514:9;468:33;:56::i;:::-;461:63;272:259;-1:-1:-1;;;;272:259:102:o;641:3323:100:-;788:30;830:18;858:19;887:17;914:18;942:26;978:25;1131:13;1190:1;1167:4;-1:-1:-1;;;;;1167:16:100;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1154:31;;:10;:31;:::i;:::-;1153:38;;;;1131:61;;1206:12;1273:3;1249:4;-1:-1:-1;;;;;1249:16:100;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1236:31;;:10;:31;:::i;:::-;1227:49;;;;:::i;:::-;1206:71;;1292:18;1355:1;1332:4;-1:-1:-1;;;;;1332:16:100;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1320:30;;:9;:30;:::i;:::-;1319:37;;;;1292:65;;1371:17;1439:3;1417:4;-1:-1:-1;;;;;1417:16:100;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1405:30;;:9;:30;:::i;:::-;1404:38;;;;:::i;:::-;1371:73;;1919:1;1903:11;1898:16;;:1;:16;;1865:4;-1:-1:-1;;;;;1865:15:100;;1881:12;1865:29;;;;;;;;;;;;;;2247:1:105;2236:21;;;;2218:40;;2206:2;2191:18;;2076:188;1865:29:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:50;1864:56;1863:117;;;;;1955:4;-1:-1:-1;;;;;1955:16:100;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1943:30;;:9;:30;:::i;:::-;1942:37;;;1863:117;:161;;;;;2014:9;2001:22;;:10;:22;;;1863:161;1824:200;;2334:1;2323:6;2318:11;;:1;:11;;2290:4;-1:-1:-1;;;;;2290:15:100;;2306:7;2290:24;;;;;;;;;;;;;;2247:1:105;2236:21;;;;2218:40;;2206:2;2191:18;;2076:188;2290:24:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:40;2289:46;2288:108;;;;;2371:4;-1:-1:-1;;;;;2371:16:100;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;2358:31;;:10;:31;:::i;:::-;2357:38;;;2288:108;:152;;;;;2430:9;2417:22;;:10;:22;;;2288:152;2248:192;;2469:12;2459:22;;:7;:22;;;:76;;;;2497:12;2486:23;;:7;:23;;;:48;;;;;2523:11;2513:21;;:6;:21;;;;2486:48;2455:454;;;2570:7;2555:22;;2609:6;2595:20;;2649:12;2633:28;;2694:11;2679:26;;2455:454;;;2759:12;2744:27;;2803:11;2789:25;;2848:7;2832:23;;2888:6;2873:21;;2455:454;-1:-1:-1;;;;3123:32:100;;;;;-1:-1:-1;;3165:573:100;3188:13;3172:29;;:12;:29;;;3165:573;;3351:13;3335:29;;:12;:29;;;3331:125;;3421:18;3427:12;3421:3;:18;:::i;:::-;-1:-1:-1;;3399:41:100;;;;;;3391:50;3331:125;3487:29;;-1:-1:-1;;;3487:29:100;;2247:1:105;2236:21;;;3487:29:100;;;2218:40:105;3470:14:100;;3519:4;;-1:-1:-1;;;;;3487:15:100;;;;;2191:18:105;;3487:29:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:36;3470:53;;3564:20;3577:6;3564:12;:20::i;:::-;3537:47;;;;;;:::i;:::-;;-1:-1:-1;3598:14:100;;;;:::i;:::-;;;;-1:-1:-1;;3703:24:100;;3203:535;3165:573;;;3752:20;3748:79;;;3788:28;3815:1;3788:28;;:::i;:::-;;;3748:79;3841:21;3837:80;;;3878:28;3905:1;3878:28;;:::i;:::-;;;3837:80;3927:30;;;;;;;641:3323;;;;;:::o;3970:197::-;4025:6;;4068:72;4075:6;;4068:72;;4097:6;;;;:::i;:::-;;-1:-1:-1;4123:5:100;;-1:-1:-1;4127:1:100;4123;:5;:::i;:::-;4117:12;;;;4068:72;;;4156:4;3970:197;-1:-1:-1;;3970:197:100:o;14:118:105:-;101:5;98:1;87:20;80:5;77:31;67:59;;122:1;119;112:12;67:59;14:118;:::o;137:584::-;234:6;242;250;303:2;291:9;282:7;278:23;274:32;271:52;;;319:1;316;309:12;271:52;345:23;;-1:-1:-1;;;;;397:31:105;;387:42;;377:70;;443:1;440;433:12;377:70;466:5;-1:-1:-1;523:2:105;508:18;;495:32;536:31;495:32;536:31;:::i;:::-;586:7;-1:-1:-1;645:2:105;630:18;;617:32;658:31;617:32;658:31;:::i;:::-;708:7;698:17;;;137:584;;;;;:::o;923:247::-;991:6;1044:2;1032:9;1023:7;1019:23;1015:32;1012:52;;;1060:1;1057;1050:12;1012:52;1092:9;1086:16;1111:29;1134:5;1111:29;:::i;:::-;1159:5;923:247;-1:-1:-1;;;923:247:105:o;1175:127::-;1236:10;1231:3;1227:20;1224:1;1217:31;1267:4;1264:1;1257:15;1291:4;1288:1;1281:15;1307:127;1368:10;1363:3;1359:20;1356:1;1349:31;1399:4;1396:1;1389:15;1423:4;1420:1;1413:15;1439:275;1477:1;1518;1515;1504:16;1554:1;1551;1540:16;1575:3;1565:37;;1582:18;;:::i;:::-;-1:-1:-1;;1618:21:105;;-1:-1:-1;;1641:15:105;;1614:43;1611:69;;;1660:18;;:::i;:::-;1694:14;;;1439:275;-1:-1:-1;;;1439:275:105:o;1719:181::-;1750:1;1776:8;1811:2;1808:1;1804:10;1833:3;1823:37;;1840:18;;:::i;:::-;1878:10;;1874:20;;;;;1719:181;-1:-1:-1;;1719:181:105:o;1905:166::-;1935:1;1976;1973;1962:16;1997:3;1987:37;;2004:18;;:::i;:::-;2061:3;2057:1;2054;2043:16;2038:27;2033:32;;;1905:166;;;;:::o;2269:184::-;2339:6;2392:2;2380:9;2371:7;2367:23;2363:32;2360:52;;;2408:1;2405;2398:12;2360:52;-1:-1:-1;2431:16:105;;2269:184;-1:-1:-1;2269:184:105:o;2458:151::-;2548:4;2541:12;;;2527;;;2523:31;;2566:14;;2563:40;;;2583:18;;:::i;2614:172::-;2681:10;2711;;;2723;;;2707:27;;2746:11;;;2743:37;;;2760:18;;:::i;:::-;2743:37;2614:172;;;;:::o;2791:181::-;2828:3;2875:5;2872:1;2861:20;2905:6;2896:7;2893:19;2890:45;;2915:18;;:::i;:::-;2964:1;2951:15;;2791:181;-1:-1:-1;;2791:181:105:o;2977:175::-;3045:10;3088;;;3076;;;3072:27;;3111:12;;;3108:38;;;3126:18;;:::i;3157:197::-;3195:3;3223:6;3264:2;3257:5;3253:14;3291:2;3282:7;3279:15;3276:41;;3297:18;;:::i;:::-;3346:1;3333:15;;3157:197;-1:-1:-1;;;3157:197:105:o;3359:128::-;3426:9;;;3447:11;;;3444:37;;;3461:18;;:::i",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "countInitializedTicksCrossed(address,int24,int24)": "4c5b941c"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IPancakeV3Pool\",\"name\":\"pool\",\"type\":\"address\"},{\"internalType\":\"int24\",\"name\":\"tickBefore\",\"type\":\"int24\"},{\"internalType\":\"int24\",\"name\":\"tickAfter\",\"type\":\"int24\"}],\"name\":\"countInitializedTicksCrossed\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"initializedTicksCrossed\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/v3-periphery/contracts/test/PoolTicksCounterTest.sol\":\"PoolTicksCounterTest\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@beatx/=src/beatx/\",\":@horizondex/=src/horizondex/\",\":@matterlabs/=lib/aa-signature-checker/\",\":@merkle/=src/mproof/\",\":@metazeus/=src/metazeus/\",\":@mute/=src/mute-c4/\",\":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@oz4.8.1/=lib/oz4.8.1/\",\":@pancakeswap/=src/\",\":@protomerkle/=lib/protomerkle/\",\":@rabbithole/=src/rabbithole-c4/\",\":@solmate/=lib/solmate/src/\",\":@tokensales/=src/TokenSales/\",\":@uniswap/=lib/\",\":@zks/=src/zks/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":openzeppelin/=lib/oz4.9.2/contracts/\",\":oz4.8.1/=lib/oz4.8.1/\",\":oz4.9.2/=lib/oz4.9.2/\",\":solidity-lib/=lib/solidity-lib/contracts/\",\":v2-core/=lib/v2-core/contracts/\"]},\"sources\":{\"src/v3-core/contracts/interfaces/IPancakeV3Pool.sol\":{\"keccak256\":\"0x4f22208838b7b85d2d48e9a92a0cee1e5bf5f12fe0f2f5cc521ab1adabb68fbb\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f39833bc732ff76e8abe44206981f115116e3c0f4f867099d1c1a3621febefea\",\"dweb:/ipfs/QmcSb8EyNu6y6sueWZmc6uYbPrWz3Z38RuLipeWB2E5JRc\"]},\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolActions.sol\":{\"keccak256\":\"0x78ed1c130111169f443c55618ff2d290ce0630b1d016cdeda3a66e12816041f6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://230ba84dfb2cbaadffe4554d9b74ddc7e6b696e51e5e9f327be469a47c332137\",\"dweb:/ipfs/Qmapm23aouHCAMVxLG6eRfUY134QZzDvsAnXqX3UnpdA2o\"]},\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolDerivedState.sol\":{\"keccak256\":\"0x45a9f30f562b5d0d55b311149c32df5cbcf0c7cfcb72aff2637a29794b06d4b6\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://a6a90b9532960842ebee061f6acefc680ae06bfd73e7c3536dd67f566137ded8\",\"dweb:/ipfs/QmPDfMp1k417dMPJAcFK4s6nkFX7GxiC8vtis8eAA7Jrk5\"]},\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolEvents.sol\":{\"keccak256\":\"0xab6ac5bd9ceadd20e3b60bb079489a2942c60f2697a6e145c585ee49b281534c\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://50df58f97d6b423605489b3dfad69b0e4f68197d02950d6858072b1bffe5fa44\",\"dweb:/ipfs/QmQGa1CGYRqkr4Mv85z7A7vGRAmCgmpU2hikMuRURu7AUA\"]},\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolImmutables.sol\":{\"keccak256\":\"0x8cde7ad64b4dced2fa40e91e3c8ffd0eaaf86954c65a1c0f7abc35f1af3a89d0\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://6dda14811ba9ddf552ecf2c6b7414ea9eda70421ffa05830baec1c12c157fa77\",\"dweb:/ipfs/QmbLT6zzSxFAtD1NsZRPpuDRXKtgQ8vbg3P6NcSRA2K4Qh\"]},\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol\":{\"keccak256\":\"0x5c522018f94c194608fd0f3f6bb1c7373d53496f5b6cb5e916b7a8d61fc7caf1\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://4e3b53a05473e3862a40c30bc9ef64c3d835975297577a790309253917d990e9\",\"dweb:/ipfs/QmRSrGUM3AEXjBBWvrHzdvz4ibjAYDFZzfRZoXRnFDz9vi\"]},\"src/v3-core/contracts/interfaces/pool/IPancakeV3PoolState.sol\":{\"keccak256\":\"0xbf4a0b7b13de3cb73722a74cfee8b34fa250855373cd17e54a093f9054efbc61\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://a238096b300063a853ccad81ff3141b64784c7ae18f3e254701fdc8763f3b885\",\"dweb:/ipfs/Qmd1RiqVgZgsjdUDAmpHnp9myXDRTJyFkWyNZmZWS4bXRT\"]},\"src/v3-periphery/contracts/libraries/PoolTicksCounter.sol\":{\"keccak256\":\"0x765dec6229fc5edc1bd2b0c0f965a887daf0fc87784aadf90fcd0d5d7b3a34b7\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://b2b2afbe85d2d419a014c637dbe9c81c3d0eb8bad31adac625da3466b5578c47\",\"dweb:/ipfs/QmbRbR2uoZvU7yqpzgtCKE49qvXwpzCmFnpyG2TN4rCqTo\"]},\"src/v3-periphery/contracts/test/PoolTicksCounterTest.sol\":{\"keccak256\":\"0xf380f0b45ce3d51091b0e5c2c7d5e7466784cad5c857b2c306d9907fe8e61401\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://edb50d091ea2d5d37cf74bc0433b1f438028c0a4147db59be392c80b1ac276c2\",\"dweb:/ipfs/QmQ7UfG7oUxuquaz7DWuRKVJ6YdU7b6sKbqrsAYmtJoej7\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IPancakeV3Pool",
+              "name": "pool",
+              "type": "address"
+            },
+            {
+              "internalType": "int24",
+              "name": "tickBefore",
+              "type": "int24"
+            },
+            {
+              "internalType": "int24",
+              "name": "tickAfter",
+              "type": "int24"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "countInitializedTicksCrossed",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "initializedTicksCrossed",
+              "type": "uint32"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@beatx/=src/beatx/",
+        "@horizondex/=src/horizondex/",
+        "@matterlabs/=lib/aa-signature-checker/",
+        "@merkle/=src/mproof/",
+        "@metazeus/=src/metazeus/",
+        "@mute/=src/mute-c4/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz4.8.1/=lib/oz4.8.1/",
+        "@pancakeswap/=src/",
+        "@protomerkle/=lib/protomerkle/",
+        "@rabbithole/=src/rabbithole-c4/",
+        "@solmate/=lib/solmate/src/",
+        "@tokensales/=src/TokenSales/",
+        "@uniswap/=lib/",
+        "@zks/=src/zks/",
+        "base64-sol/=lib/base64/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/oz4.9.2/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/oz4.9.2/contracts/",
+        "oz4.8.1/=lib/oz4.8.1/",
+        "oz4.9.2/=lib/oz4.9.2/",
+        "solidity-lib/=lib/solidity-lib/contracts/",
+        "v2-core/=lib/v2-core/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/v3-periphery/contracts/test/PoolTicksCounterTest.sol": "PoolTicksCounterTest"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/v3-core/contracts/interfaces/IPancakeV3Pool.sol": {
+        "keccak256": "0x4f22208838b7b85d2d48e9a92a0cee1e5bf5f12fe0f2f5cc521ab1adabb68fbb",
+        "urls": [
+          "bzz-raw://f39833bc732ff76e8abe44206981f115116e3c0f4f867099d1c1a3621febefea",
+          "dweb:/ipfs/QmcSb8EyNu6y6sueWZmc6uYbPrWz3Z38RuLipeWB2E5JRc"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolActions.sol": {
+        "keccak256": "0x78ed1c130111169f443c55618ff2d290ce0630b1d016cdeda3a66e12816041f6",
+        "urls": [
+          "bzz-raw://230ba84dfb2cbaadffe4554d9b74ddc7e6b696e51e5e9f327be469a47c332137",
+          "dweb:/ipfs/Qmapm23aouHCAMVxLG6eRfUY134QZzDvsAnXqX3UnpdA2o"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolDerivedState.sol": {
+        "keccak256": "0x45a9f30f562b5d0d55b311149c32df5cbcf0c7cfcb72aff2637a29794b06d4b6",
+        "urls": [
+          "bzz-raw://a6a90b9532960842ebee061f6acefc680ae06bfd73e7c3536dd67f566137ded8",
+          "dweb:/ipfs/QmPDfMp1k417dMPJAcFK4s6nkFX7GxiC8vtis8eAA7Jrk5"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolEvents.sol": {
+        "keccak256": "0xab6ac5bd9ceadd20e3b60bb079489a2942c60f2697a6e145c585ee49b281534c",
+        "urls": [
+          "bzz-raw://50df58f97d6b423605489b3dfad69b0e4f68197d02950d6858072b1bffe5fa44",
+          "dweb:/ipfs/QmQGa1CGYRqkr4Mv85z7A7vGRAmCgmpU2hikMuRURu7AUA"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolImmutables.sol": {
+        "keccak256": "0x8cde7ad64b4dced2fa40e91e3c8ffd0eaaf86954c65a1c0f7abc35f1af3a89d0",
+        "urls": [
+          "bzz-raw://6dda14811ba9ddf552ecf2c6b7414ea9eda70421ffa05830baec1c12c157fa77",
+          "dweb:/ipfs/QmbLT6zzSxFAtD1NsZRPpuDRXKtgQ8vbg3P6NcSRA2K4Qh"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolOwnerActions.sol": {
+        "keccak256": "0x5c522018f94c194608fd0f3f6bb1c7373d53496f5b6cb5e916b7a8d61fc7caf1",
+        "urls": [
+          "bzz-raw://4e3b53a05473e3862a40c30bc9ef64c3d835975297577a790309253917d990e9",
+          "dweb:/ipfs/QmRSrGUM3AEXjBBWvrHzdvz4ibjAYDFZzfRZoXRnFDz9vi"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-core/contracts/interfaces/pool/IPancakeV3PoolState.sol": {
+        "keccak256": "0xbf4a0b7b13de3cb73722a74cfee8b34fa250855373cd17e54a093f9054efbc61",
+        "urls": [
+          "bzz-raw://a238096b300063a853ccad81ff3141b64784c7ae18f3e254701fdc8763f3b885",
+          "dweb:/ipfs/Qmd1RiqVgZgsjdUDAmpHnp9myXDRTJyFkWyNZmZWS4bXRT"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/libraries/PoolTicksCounter.sol": {
+        "keccak256": "0x765dec6229fc5edc1bd2b0c0f965a887daf0fc87784aadf90fcd0d5d7b3a34b7",
+        "urls": [
+          "bzz-raw://b2b2afbe85d2d419a014c637dbe9c81c3d0eb8bad31adac625da3466b5578c47",
+          "dweb:/ipfs/QmbRbR2uoZvU7yqpzgtCKE49qvXwpzCmFnpyG2TN4rCqTo"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "src/v3-periphery/contracts/test/PoolTicksCounterTest.sol": {
+        "keccak256": "0xf380f0b45ce3d51091b0e5c2c7d5e7466784cad5c857b2c306d9907fe8e61401",
+        "urls": [
+          "bzz-raw://edb50d091ea2d5d37cf74bc0433b1f438028c0a4147db59be392c80b1ac276c2",
+          "dweb:/ipfs/QmQ7UfG7oUxuquaz7DWuRKVJ6YdU7b6sKbqrsAYmtJoej7"
+        ],
+        "license": "GPL-2.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/v3-periphery/contracts/test/PoolTicksCounterTest.sol",
+    "id": 51836,
+    "exportedSymbols": {
+      "IPancakeV3Pool": [
+        49264
+      ],
+      "IPancakeV3PoolActions": [
+        49435
+      ],
+      "IPancakeV3PoolDerivedState": [
+        49466
+      ],
+      "IPancakeV3PoolEvents": [
+        49589
+      ],
+      "IPancakeV3PoolImmutables": [
+        49629
+      ],
+      "IPancakeV3PoolOwnerActions": [
+        49661
+      ],
+      "IPancakeV3PoolState": [
+        49769
+      ],
+      "PoolTicksCounter": [
+        51782
+      ],
+      "PoolTicksCounterTest": [
+        51835
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:489:102",
+    "nodes": [
+      {
+        "id": 51809,
+        "nodeType": "ImportDirective",
+        "src": "45:70:102",
+        "nodes": [],
+        "absolutePath": "src/v3-core/contracts/interfaces/IPancakeV3Pool.sol",
+        "file": "@pancakeswap/v3-core/contracts/interfaces/IPancakeV3Pool.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 51836,
+        "sourceUnit": 49265,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 51810,
+        "nodeType": "PragmaDirective",
+        "src": "117:24:102",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".0"
+        ]
+      },
+      {
+        "id": 51811,
+        "nodeType": "ImportDirective",
+        "src": "143:43:102",
+        "nodes": [],
+        "absolutePath": "src/v3-periphery/contracts/libraries/PoolTicksCounter.sol",
+        "file": "../libraries/PoolTicksCounter.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 51836,
+        "sourceUnit": 51783,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 51835,
+        "nodeType": "ContractDefinition",
+        "src": "188:345:102",
+        "nodes": [
+          {
+            "id": 51815,
+            "nodeType": "UsingForDirective",
+            "src": "224:42:102",
+            "nodes": [],
+            "global": false,
+            "libraryName": {
+              "id": 51812,
+              "name": "PoolTicksCounter",
+              "nameLocations": [
+                "230:16:102"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 51782,
+              "src": "230:16:102"
+            },
+            "typeName": {
+              "id": 51814,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 51813,
+                "name": "IPancakeV3Pool",
+                "nameLocations": [
+                  "251:14:102"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 49264,
+                "src": "251:14:102"
+              },
+              "referencedDeclaration": 49264,
+              "src": "251:14:102",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IPancakeV3Pool_$49264",
+                "typeString": "contract IPancakeV3Pool"
+              }
+            }
+          },
+          {
+            "id": 51834,
+            "nodeType": "FunctionDefinition",
+            "src": "272:259:102",
+            "nodes": [],
+            "body": {
+              "id": 51833,
+              "nodeType": "Block",
+              "src": "451:80:102",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 51829,
+                        "name": "tickBefore",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51820,
+                        "src": "502:10:102",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int24",
+                          "typeString": "int24"
+                        }
+                      },
+                      {
+                        "id": 51830,
+                        "name": "tickAfter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51822,
+                        "src": "514:9:102",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int24",
+                          "typeString": "int24"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int24",
+                          "typeString": "int24"
+                        },
+                        {
+                          "typeIdentifier": "t_int24",
+                          "typeString": "int24"
+                        }
+                      ],
+                      "expression": {
+                        "id": 51827,
+                        "name": "pool",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51818,
+                        "src": "468:4:102",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IPancakeV3Pool_$49264",
+                          "typeString": "contract IPancakeV3Pool"
+                        }
+                      },
+                      "id": 51828,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "473:28:102",
+                      "memberName": "countInitializedTicksCrossed",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51752,
+                      "src": "468:33:102",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_contract$_IPancakeV3Pool_$49264_$_t_int24_$_t_int24_$returns$_t_uint32_$attached_to$_t_contract$_IPancakeV3Pool_$49264_$",
+                        "typeString": "function (contract IPancakeV3Pool,int24,int24) view returns (uint32)"
+                      }
+                    },
+                    "id": 51831,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "468:56:102",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "functionReturnParameters": 51826,
+                  "id": 51832,
+                  "nodeType": "Return",
+                  "src": "461:63:102"
+                }
+              ]
+            },
+            "functionSelector": "4c5b941c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "countInitializedTicksCrossed",
+            "nameLocation": "281:28:102",
+            "parameters": {
+              "id": 51823,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51818,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nameLocation": "334:4:102",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51834,
+                  "src": "319:19:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IPancakeV3Pool_$49264",
+                    "typeString": "contract IPancakeV3Pool"
+                  },
+                  "typeName": {
+                    "id": 51817,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 51816,
+                      "name": "IPancakeV3Pool",
+                      "nameLocations": [
+                        "319:14:102"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 49264,
+                      "src": "319:14:102"
+                    },
+                    "referencedDeclaration": 49264,
+                    "src": "319:14:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IPancakeV3Pool_$49264",
+                      "typeString": "contract IPancakeV3Pool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51820,
+                  "mutability": "mutable",
+                  "name": "tickBefore",
+                  "nameLocation": "354:10:102",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51834,
+                  "src": "348:16:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 51819,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "348:5:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 51822,
+                  "mutability": "mutable",
+                  "name": "tickAfter",
+                  "nameLocation": "380:9:102",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51834,
+                  "src": "374:15:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 51821,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "374:5:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "309:86:102"
+            },
+            "returnParameters": {
+              "id": 51826,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51825,
+                  "mutability": "mutable",
+                  "name": "initializedTicksCrossed",
+                  "nameLocation": "426:23:102",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51834,
+                  "src": "419:30:102",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 51824,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "419:6:102",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "418:32:102"
+            },
+            "scope": 51835,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PoolTicksCounterTest",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          51835
+        ],
+        "name": "PoolTicksCounterTest",
+        "nameLocation": "197:20:102",
+        "scope": 51836,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "GPL-2.0-or-later"
+  },
+  "id": 102
+}
